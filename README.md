@@ -2,47 +2,144 @@
 
 > **One place. Just OSINT links. Nothing more.**
 
-A simple, centralized directory of OSINT tools, websites, repositories and reference lists.
+A visual, centralized directory of OSINT tools, websites, repositories and reference lists.
 
-**OSINTList is intentionally not a framework, methodology, knowledge graph, course or investigation platform.**  
-Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
+**OSINTList is intentionally simple:** no methodology layer, no case management, no knowledge graph backend.  
+The entire catalogue lives on this page. Browse by theme, expand a category, or use `Ctrl/Cmd + F`.
 
 ## Related projects
 
-- [OSINT4ALL](https://github.com/Ridd1kulusC0d3r/OSINT4ALL) — structured intelligence-resource atlas, methodology and machine-readable catalogue.
-- [OSINTECA](https://github.com/Ridd1kulusC0d3r/OSINTECA) — broader OSINT knowledge/reference project.
-- **OSINTList** — the deliberately simple one: **links, categories, one README**.
+| Project | Purpose |
+|---|---|
+| [OSINT4ALL](https://github.com/Ridd1kulusC0d3r/OSINT4ALL) | Structured intelligence-resource atlas, methodology and machine-readable catalogue |
+| [OSINTECA](https://github.com/Ridd1kulusC0d3r/OSINTECA) | Broader OSINT knowledge and reference ecosystem |
+| **OSINTList** | Fast visual directory: links, themes and one README |
 
-## Directory
+## At a glance
 
-**3,911 unique links** consolidated and deduplicated from multiple OSINT ecosystems.
+**3,911 unique links · 21 categories · 7 macro-themes**
 
-- [Search, Discovery & Dorks](#search-discovery-dorks) — 309
-- [People, Identity & Usernames](#people-identity-usernames) — 205
-- [Email](#email) — 53
-- [Phone](#phone) — 98
-- [Social Media](#social-media) — 315
-- [Domains, IP & Cyber Intelligence](#domains-ip-cyber-intelligence) — 298
-- [Code & Repository OSINT](#code-repository-osint) — 531
-- [Images, Video & Metadata](#images-video-metadata) — 175
-- [GEOINT, Maps & Satellite](#geoint-maps-satellite) — 305
-- [Transport, Maritime & Space](#transport-maritime-space) — 34
-- [Companies, Finance & Blockchain](#companies-finance-blockchain) — 159
-- [Public Records & Government](#public-records-government) — 120
-- [News, Media & Monitoring](#news-media-monitoring) — 152
-- [Documents, Academic & Research](#documents-academic-research) — 97
-- [Archives & Evidence Preservation](#archives-evidence-preservation) — 38
-- [Environmental OSINT](#environmental-osint) — 3
-- [AI, Agents & MCP](#ai-agents-mcp) — 112
-- [Frameworks & Automation](#frameworks-automation) — 28
-- [Brazil & Regional](#brazil-regional) — 35
-- [Lists, Training & Reference](#lists-training-reference) — 69
-- [Other OSINT Resources](#other-osint-resources) — 775
+| Theme | Coverage | Links |
+|---|---|---:|
+| 🧭 **Discovery & Reference** | Search, Discovery & Dorks · Lists, Training & Reference | **378** |
+| 👤 **People & Identity** | People, Identity & Usernames · Email · Phone · Social Media | **671** |
+| 🌐 **Cyber & Digital Footprint** | Domains, IP & Cyber Intelligence · Code & Repository OSINT · Archives & Evidence Preservation | **867** |
+| 🗺️ **Media, GEOINT & Physical World** | Images, Video & Metadata · GEOINT, Maps & Satellite · Transport, Maritime & Space · Environmental OSINT | **517** |
+| 🏛️ **Organizations, Records & Research** | Companies, Finance & Blockchain · Public Records & Government · Brazil & Regional · Documents, Academic & Research | **411** |
+| ⚙️ **Monitoring, AI & Automation** | News, Media & Monitoring · AI, Agents & MCP · Frameworks & Automation | **292** |
+| 🧰 **Miscellaneous** | Other OSINT Resources | **775** |
+
+## OSINT thematic map
+
+```mermaid
+mindmap
+  root((OSINTList))
+    Discovery & Reference
+      Search engines
+      Dorks
+      Curated lists
+      Training
+    People & Identity
+      Usernames
+      Email
+      Phone
+      Social media
+    Cyber & Digital Footprint
+      Domains
+      IP & ASN
+      Code repositories
+      Web archives
+    Media & GEOINT
+      Images
+      Video
+      Metadata
+      Maps
+      Satellite
+      Transport
+      Environment
+    Organizations & Records
+      Companies
+      Finance
+      Public records
+      Brazil & regional
+      Documents
+      Academic research
+    Monitoring & Automation
+      News
+      Monitoring
+      AI
+      MCP
+      Frameworks
+```
+
+## Pivot map
+
+```mermaid
+flowchart LR
+    A[Start with what you have] --> B{Input}
+    B --> U[Username / Name]
+    B --> E[Email]
+    B --> P[Phone]
+    B --> D[Domain / IP]
+    B --> M[Image / Video]
+    B --> C[Company]
+    B --> L[Location]
+    U --> S[People & Social Media]
+    E --> S
+    P --> S
+    D --> I[Cyber & Digital Footprint]
+    M --> G[Media & GEOINT]
+    L --> G
+    C --> R[Organizations & Public Records]
+    S --> X[Pivot to new identifiers]
+    I --> X
+    G --> X
+    R --> X
+    X --> A
+```
+
+## Quick pivots
+
+| You have | Open |
+|---|---|
+| Username / name | [People, Identity & Usernames](#people-identity-usernames) |
+| Email | [Email](#email) |
+| Phone number | [Phone](#phone) |
+| Social profile | [Social Media](#social-media) |
+| Domain / IP / ASN | [Domains, IP & Cyber Intelligence](#domains-ip-cyber-intelligence) |
+| GitHub / code clue | [Code & Repository OSINT](#code-repository-osint) |
+| Image / video | [Images, Video & Metadata](#images-video-metadata) |
+| Place / coordinates | [GEOINT, Maps & Satellite](#geoint-maps-satellite) |
+| Aircraft / vessel / orbital object | [Transport, Maritime & Space](#transport-maritime-space) |
+| Company / organization | [Companies, Finance & Blockchain](#companies-finance-blockchain) |
+| Public record / government clue | [Public Records & Government](#public-records-government) |
+| Brazil-specific target | [Brazil & Regional](#brazil-regional) |
+| News event / topic | [News, Media & Monitoring](#news-media-monitoring) |
+| Document / paper / PDF | [Documents, Academic & Research](#documents-academic-research) |
+| Old or deleted page | [Archives & Evidence Preservation](#archives-evidence-preservation) |
+| Need automation | [Frameworks & Automation](#frameworks-automation) |
+| Need AI-assisted tools | [AI, Agents & MCP](#ai-agents-mcp) |
+
+## Theme index
+
+- 🧭 [**Discovery & Reference**](#discovery-reference) — 378 links
+- 👤 [**People & Identity**](#people-identity) — 671 links
+- 🌐 [**Cyber & Digital Footprint**](#cyber-digital-footprint) — 867 links
+- 🗺️ [**Media, GEOINT & Physical World**](#media-geoint-physical-world) — 517 links
+- 🏛️ [**Organizations, Records & Research**](#organizations-records-research) — 411 links
+- ⚙️ [**Monitoring, AI & Automation**](#monitoring-ai-automation) — 292 links
+- 🧰 [**Miscellaneous**](#miscellaneous) — 775 links
 
 ---
 
+<a id="discovery-reference"></a>
+## 🧭 Discovery & Reference
+
+Start here: search engines, dorks, curated lists and broad resource discovery.
+
 <a id="search-discovery-dorks"></a>
-## Search, Discovery & Dorks
+<details>
+<summary><strong>🔎 Search, Discovery & Dorks</strong> · 309 links</summary>
 
 - [2lingual](https://2lingual.com)
 - [2lingual Search](https://www.2lingual.com)
@@ -355,7 +452,97 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [ZorexEye](http://zorexeye.com)
 
 <a id="people-identity-usernames"></a>
-## People, Identity & Usernames
+
+</details>
+
+<a id="lists-training-reference"></a>
+<details>
+<summary><strong>🧭 Lists, Training & Reference</strong> · 69 links</summary>
+
+- [appsec.fyi OSINT Resources](https://appsec.fyi/osint.html)
+- [Aware-online.com](https://www.aware-online.com/en/osint-tools)
+- [Awesomelists.top](http://awesomelists.top)
+- [Bellingcat Online Researcher Survey: Tool Wishes](https://docs.google.com/spreadsheets/d/1vNJRMrlwI7i06diBJtRJWrvt4YuPOqlbUV5o00P_YmE/edit#gid=1378107220)
+- [bellingcat.com](https://bellingcat.com)
+- [Beyond](https://www.beyond.com)
+- [billingcat](https://challenge.bellingcat.com)
+- [Bitcoinprivacy.guide](https://bitcoinprivacy.guide)
+- [Broadcastify](https://www.broadcastify.com/listen)
+- [Browser Recommendations](https://privacyguides.org/browsers)
+- [BTFM: Blue Team Field Manual](https://www.amazon.com/dp/154101636X)
+- [CampusCareerCenter](https://www.campuscareercenter.com)
+- [CareerBuilder](https://www.careerbuilder.com)
+- [Cipherstick](https://cipherstick.tech)
+- [College Recruiter](https://www.collegerecruiter.com)
+- [ctftime.org](https://ctftime.org)
+- [CTI & OSINT Online Resources](https://docs.google.com/spreadsheets/d/1klugQqw6POlBtuzon8S0b18-gpsDwX-5OYRrB7TyNEw/edit#gid=0)
+- [CVFox](https://www.cvfox.com)
+- [Datasetlist.com](https://www.datasetlist.com)
+- [Dice](https://www.dice.com)
+- [Eluta (Canada)](https://www.eluta.ca)
+- [Eurojobs](https://www.eurojobs.com)
+- [FAROS OSINT Resources](https://start.me/p/1kvvxN/faros-osint-resources)
+- [Fish4Jobs](https://www.fish4.co.uk)
+- [gijn.org](https://gijn.org)
+- [Google Guide Advanced Operators](http://www.googleguide.com/advanced_operators_reference.html)
+- [Hacker101](https://www.hacker101.com)
+- [HackerOne Hacktivity](https://hackerone.com/hacktivity)
+- [Harmari (Unified Listings Search)](https://www.harmari.com/search/unified)
+- [Idealist](https://www.idealist.org)
+- [Indeed](https://www.indeed.com)
+- [IppSec.rocks](https://ippsec.rocks)
+- [Jobs (Poland)](https://www.jobs.pl)
+- [Jobsite (UK)](https://www.jobsite.co.uk)
+- [LeoList](https://www.leolist.cc)
+- [Listen Notes](https://www.listennotes.com)
+- [Listify](https://listify.okfnlabs.org)
+- [LiveOverflow](https://www.youtube.com/@LiveOverflow)
+- [Monster](https://www.monster.com)
+- [NahamSec](https://www.youtube.com/@nahamsec)
+- [Naukri (India)](https://www.naukri.com)
+- [OSINT Belarus](https://t.me/s/osintby)
+- [OSINT Dojo](https://www.osintdojo.com/resources)
+- [OSINT Resources in Canada](https://start.me/p/aLe0vp/osint-resources-in-canada)
+- [osintdojo.com](https://osintdojo.com)
+- [PentesterLand Bug Bounty Writeups](https://pentester.land/list-of-bug-bounty-writeups.html)
+- [PortSwigger Research](https://portswigger.net/research)
+- [Privacy Guides](https://privacyguides.org)
+- [Quite a Playlist](https://quiteaplaylist.com)
+- [RecruitEm](https://recruitin.net)
+- [Reed (UK)](https://www.reed.co.uk)
+- [RTFM: Red Team Field Manual](https://www.amazon.com/dp/B07RJG62SJ)
+- [Sanctions List Search](https://sanctionssearch.ofac.treas.gov)
+- [sans.org](https://sans.org)
+- [Seek (Australia)](https://www.seek.com.au)
+- [SEO Resources Search Engine](https://cse.google.com/cse/publicurl?cx=005797772976587943970:i7q6z1kjm1w)
+- [Shodan Cheat Sheet](https://thedarksource.com/shodan-cheat-sheet)
+- [SimplyHired](https://www.simplyhired.com)
+- [TCM Security - OSINT](https://youtu.be/qwA6MmbeGNo?si=XprgFu92D2LpKNKv)
+- [The Hitchhiker’s Guide to Online Anonymity](https://anonymousplanet.org/guide.html)
+- [The Top 132 Osint Open Source Projects](https://awesomeopensource.com/projects/osint)
+- [These Are the Tools Open Source Researchers Say They Need](https://www.bellingcat.com/resources/2022/08/12/these-are-the-tools-open-source-researchers-say-they-need)
+- [TorrentFreak List of VPNs](https://torrentfreak.com/vpn-services-anonymous-review-2017-170304)
+- [TSA No-Fly List](https://www.no-fly-list.com)
+- [Twitch Tools](https://twitch-tools.rootonline.de/followerlist_viewer.php)
+- [UNIDO Statistical Databases](https://www.unido.org/resources/statistics/statistical-databases.html)
+- [VPN Services](https://privacyguides.org/providers/vpn)
+- [weakpass.com](https://weakpass.com)
+- [ZipRecruiter](https://www.ziprecruiter.com)
+
+<a id="other-osint-resources"></a>
+
+</details>
+
+---
+
+<a id="people-identity"></a>
+## 👤 People & Identity
+
+Identity pivots across usernames, email, phone and social platforms.
+
+<a id="people-identity-usernames"></a>
+<details>
+<summary><strong>👤 People, Identity & Usernames</strong> · 205 links</summary>
 
 - [192 (UK)](https://www.192.com)
 - [411](http://411.com)
@@ -564,7 +751,12 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Zehef](https://github.com/N0rz3/Zehef)
 
 <a id="email"></a>
-## Email
+
+</details>
+
+<a id="email"></a>
+<details>
+<summary><strong>✉️ Email</strong> · 53 links</summary>
 
 - [10minutemail.com](https://10minutemail.com)
 - [AKP email database/](https://wikileaks.org//akp-emails)
@@ -621,7 +813,12 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [ZMail](https://zmail.sourceforge.net)
 
 <a id="phone"></a>
-## Phone
+
+</details>
+
+<a id="phone"></a>
+<details>
+<summary><strong>📞 Phone</strong> · 98 links</summary>
 
 - [AccountAnalysis](https://accountanalysis.app)
 - [BirdHunt](https://birdhunt.co)
@@ -723,7 +920,12 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [ZLOOKUP](https://www.zlookup.com)
 
 <a id="social-media"></a>
-## Social Media
+
+</details>
+
+<a id="social-media"></a>
+<details>
+<summary><strong>💬 Social Media</strong> · 315 links</summary>
 
 - [@murphlive](https://twitter.com/murph_live)
 - [220vk.com](https://220vk.com)
@@ -1042,7 +1244,19 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Фари](https://telegram.me/faribybot)
 
 <a id="domains-ip-cyber-intelligence"></a>
-## Domains, IP & Cyber Intelligence
+
+</details>
+
+---
+
+<a id="cyber-digital-footprint"></a>
+## 🌐 Cyber & Digital Footprint
+
+Internet infrastructure, domains, IPs, code repositories and preserved web evidence.
+
+<a id="domains-ip-cyber-intelligence"></a>
+<details>
+<summary><strong>🌐 Domains, IP & Cyber Intelligence</strong> · 298 links</summary>
 
 - [aa419 Fake Sites Database](https://db.aa419.org/fakebankslist.php)
 - [Accuranker](https://www.accuranker.com)
@@ -1344,7 +1558,12 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [ZettelForge](https://github.com/ThreatRecall/zettelforge)
 
 <a id="code-repository-osint"></a>
-## Code & Repository OSINT
+
+</details>
+
+<a id="code-repository-osint"></a>
+<details>
+<summary><strong>💻 Code & Repository OSINT</strong> · 531 links</summary>
 
 - [@Ivan30394639 OSINT tools collection](https://cipher387.github.io/osint_stuff_tool_collection)
 - [0xdf hacks stuff](https://0xdf.gitlab.io)
@@ -1879,7 +2098,66 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [ZotPilot](https://github.com/xunhe730/ZotPilot)
 
 <a id="images-video-metadata"></a>
-## Images, Video & Metadata
+
+</details>
+
+<a id="archives-evidence-preservation"></a>
+<details>
+<summary><strong>🗄️ Archives & Evidence Preservation</strong> · 38 links</summary>
+
+- [A1 Website Download](https://www.microsystools.com/products/website-download)
+- [annas-archive](https://annas-archive.li)
+- [Archive-it.org](https://archive-it.org)
+- [Archive.is](https://archive.is)
+- [Archive.today](https://archive.ph)
+- [archived.moe](https://archived.moe)
+- [Berkeley Protocol](https://www.ohchr.org/en/publications/policy-and-methodological-publications/berkeley-protocol-digital-open-source)
+- [BlackWidow](https://softbytelabs.com/wp/blackwidow)
+- [CachedView](https://cachedview.com)
+- [CashedPages](https://www.cachedpages.com)
+- [Chrome Extension Archive Search Engine](https://cse.google.com/cse/publicurl?cx=000501358716561852263:h-5uyshsclq)
+- [Cyotek WebCopy](https://www.cyotek.com/cyotek-webcopy)
+- [Darknet Market Archives](https://www.gwern.net/DNM-archives)
+- [Debunking False Stories Archives](https://www.factcheck.org/fake-news)
+- [Extract Meta Data YouTube](https://citizenevidence.amnestyusa.org)
+- [Google News Print Archive](https://news.google.com/newspapers)
+- [Hooey webprint](https://www.hooeeywebprint.com.s3-website-us-east-1.amazonaws.com/download.html)
+- [https://archive.gov.ge](https://archive.gov.ge)
+- [https://archive.org/details/1989-tbilisi-1202408](https://archive.org/details/1989-tbilisi-1_202408)
+- [https://web.archive.org/web//.ge](https://web.archive.org/web/*/*.ge)
+- [HTTrack](https://www.httrack.com)
+- [Internet Archive](https://archive.org)
+- [Internet Archive](https://archive.org/web)
+- [IOA](https://www.io-archive.org)
+- [Mailing List Archives Search Engine](https://cse.google.com/cse/publicurl?cx=013991603413798772546:sipriovnbxq)
+- [Offliberty](https://offliberty.com)
+- [RECAP Archive](https://www.courtlistener.com/recap)
+- [Resolver](https://metaproductsrevolver.com)
+- [SiteSucker](https://ricks-apps.com/osx/sitesucker/index.html)
+- [Slack Workspaces](https://slackarchive.io)
+- [Snitch List](https://web.archive.org/web/20200115091633/http://sniitch.com/all)
+- [stored.website](https://stored.website)
+- [Wayback Machine](https://web.archive.org)
+- [waybackpy](https://pypi.org/project/waybackpy)
+- [Weather History & Data Archive](https://www.wunderground.com/history)
+- [WebAssistant](https://www.proxy-offline-browser.com/download.html)
+- [Website Ripper Copier](https://www.tensons.com/products/websiterippercopier)
+- [WITNESS](https://www.witness.org)
+
+<a id="environmental-osint"></a>
+
+</details>
+
+---
+
+<a id="media-geoint-physical-world"></a>
+## 🗺️ Media, GEOINT & Physical World
+
+Images, video, metadata, maps, satellite, aviation, maritime, space and environment.
+
+<a id="images-video-metadata"></a>
+<details>
+<summary><strong>🖼️ Images, Video & Metadata</strong> · 175 links</summary>
 
 - [4n6img](https://4n6img.com)
 - [Adobe FireFly](https://firefly.adobe.com)
@@ -2058,7 +2336,12 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Zapmeta](https://www.zapmeta.com)
 
 <a id="geoint-maps-satellite"></a>
-## GEOINT, Maps & Satellite
+
+</details>
+
+<a id="geoint-maps-satellite"></a>
+<details>
+<summary><strong>🗺️ GEOINT, Maps & Satellite</strong> · 305 links</summary>
 
 - [Active Agency Map](https://www.google.com/maps/d/viewer?mid=1eYVDPh5itXq5acDT9b0BVeQwmESBa4cB)
 - [Aircraft Research Skill](https://github.com/WPTK/aircraft-research-claude-skill)
@@ -2367,7 +2650,12 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Zscaler Global Threat Map Dashboard](https://threatlabz.zscaler.com/cloud-insights/threat-map-dashboard)
 
 <a id="transport-maritime-space"></a>
-## Transport, Maritime & Space
+
+</details>
+
+<a id="transport-maritime-space"></a>
+<details>
+<summary><strong>✈️ Transport, Maritime & Space</strong> · 34 links</summary>
 
 - [ADS-B Exchange](https://globe.adsbexchange.com)
 - [AIR Online India](https://www.aironline.in)
@@ -2405,7 +2693,31 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Voidly Censorship Index](https://voidly.ai/censorship-index)
 
 <a id="companies-finance-blockchain"></a>
-## Companies, Finance & Blockchain
+
+</details>
+
+<a id="environmental-osint"></a>
+<details>
+<summary><strong>🌳 Environmental OSINT</strong> · 3 links</summary>
+
+- [Firefox](https://www.mozilla.org)
+- [Firefox Focus](https://www.mozilla.org/en-US/firefox/browsers/mobile/focus)
+- [Lake County Fire Cameras](https://www.arcgis.com/apps/webappviewer/index.html?id=0f7aa08cc4b74fc6a0c4308d4eace6b3)
+
+<a id="ai-agents-mcp"></a>
+
+</details>
+
+---
+
+<a id="organizations-records-research"></a>
+## 🏛️ Organizations, Records & Research
+
+Companies, finance, public records, regional sources, documents and academic research.
+
+<a id="companies-finance-blockchain"></a>
+<details>
+<summary><strong>🏢 Companies, Finance & Blockchain</strong> · 159 links</summary>
 
 - [@cryptoamlscanbot](https://t.me/cryptoamlscan_bot)
 - [Addresschecker.eu](http://addresschecker.eu)
@@ -2568,7 +2880,12 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [ZoomInfo](https://www.zoominfo.com)
 
 <a id="public-records-government"></a>
-## Public Records & Government
+
+</details>
+
+<a id="public-records-government"></a>
+<details>
+<summary><strong>🏛️ Public Records & Government</strong> · 120 links</summary>
 
 - [AL Local Surety Association Directory](https://c0gaf106.caspio.com/dp/2d4e1000c7506b7686a540d3b10f)
 - [AR College University 2017 Salaries](https://b2.caspio.com/dp.asp?AppKey=883210005c5e51279b424364aab2)
@@ -2692,7 +3009,169 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [zillow.com](https://zillow.com)
 
 <a id="news-media-monitoring"></a>
-## News, Media & Monitoring
+
+</details>
+
+<a id="brazil-regional"></a>
+<details>
+<summary><strong>🇧🇷 Brazil & Regional</strong> · 35 links</summary>
+
+- [Alleba (Philippines)](https://www.alleba.com)
+- [Baidu (China)](https://www.baidu.com)
+- [Brazilian Address CEP Search and Report](https://c2abn462.caspio.com/dp/6c2d80006c6adb825b3b45079cb8)
+- [Company Research Resources by Country Comparably](https://www.comparably.com)
+- [Crime Brasil](https://crimebrasil.com.br)
+- [Daum (South Korea)](https://www.daum.net)
+- [Eniro (Sweden)](https://www.eniro.se)
+- [Gerdoo (Iran)](https://gerdoo.me)
+- [Goo (Japan)](https://www.goo.ne.jp)
+- [https://bgp.he.net/country/GE](https://bgp.he.net/country/GE)
+- [https://data.worldbank.org/country/georgia](https://data.worldbank.org/country/georgia)
+- [https://globalpublicprocurementdata.org/gppd/countryprofile/GE](https://globalpublicprocurementdata.org/gppd/country_profile/GE)
+- [https://imf.org/en/Countries/GEO](https://imf.org/en/Countries/GEO)
+- [https://ipinfo.io/countries/ge](https://ipinfo.io/countries/ge)
+- [https://nirsoft.net/countryip/getotal.html](https://nirsoft.net/countryip/ge_total.html)
+- [International Trade Center](https://www.intracen.org/ByCountry.aspx)
+- [Najdi (Slovenia)](https://www.najdi.si)
+- [Naver (South Korea)](https://www.naver.com)
+- [Onet.pl (Poland)](https://www.onet.pl)
+- [Orange (France)](https://www.orange.fr)
+- [OSINT Brazuca](https://github.com/osintbrazuca/osint-brazuca)
+- [OSINT Brazuca Papers](https://github.com/osintbrazuca/osint-papers)
+- [OSINT Brazuca Regex](https://github.com/osintbrazuca/osint-brazuca-regex)
+- [Parseek (Iran)](https://www.parseek.com)
+- [SAPO (Portugal)](https://www.sapo.pt)
+- [Search.ch (Switzerland)](https://www.search.ch)
+- [Seznam(Czech Republic)](https://seznam.cz)
+- [SoGou (China)](https://www.sogou.com)
+- [TerraBrasilis](https://terrabrasilis.dpi.inpe.br)
+- [TikTok Finder Country](https://tiktokfindercountry.xyz)
+- [UNCTAD Country Fact Sheets](https://unctad.org/en/Pages/DIAE/World%20Investment%20Report/Country-Fact-Sheets.aspx)
+- [UNCTAD Investment Country Profiles](https://unctad.org/en/Pages/Publications/Investment-country-profiles.aspx)
+- [Walla (Israel)](https://www.walla.co.il)
+- [Yandex (Russia)](https://www.yandex.com)
+- [Zarebin (Iran)](https://zarebin.ir)
+
+<a id="lists-training-reference"></a>
+
+</details>
+
+<a id="documents-academic-research"></a>
+<details>
+<summary><strong>📚 Documents, Academic & Research</strong> · 97 links</summary>
+
+- [Academia](https://www.academia.edu)
+- [Academic Journals](https://www.academicjournals.org)
+- [African Journal Online](https://www.ajol.info)
+- [American Society of Civil Engineers](https://ascelibrary.org)
+- [Arrest Bookings Search and Report](https://b2.caspio.com/dp/a1a3100009b7083c53a9405f8c6b)
+- [Base](https://www.base-search.net)
+- [Beaker](https://beakernotebook.com)
+- [Bibsonomy](https://www.bibsonomy.org)
+- [ChatPDF](https://www.chatpdf.com)
+- [CIA World Factbook](https://www.cia.gov/the-world-factbook)
+- [CiteSeerX](https://citeseerx.ist.psu.edu)
+- [Consensus](https://consensus.app)
+- [ConsentTheater Playbill](https://codeberg.org/ConsentTheater/playbill)
+- [Core](https://core.ac.uk/search)
+- [CORE](https://core.ac.uk)
+- [Corrections Books Approval Search](https://b2.caspio.com/dp/0a921000cae47f9702f44d2bb94b)
+- [Crossref](https://www.crossref.org)
+- [DataInt Databook](https://databook.dataint.net)
+- [Dimensions](https://www.dimensions.ai)
+- [DocumentCloud](https://www.documentcloud.org)
+- [documentcloud.org](https://documentcloud.org)
+- [Documents Search Engine](https://cse.google.com/cse?cx=e6756edc507bcfa91)
+- [Elicit](https://elicit.com)
+- [Elsevier](https://www.elsevier.com)
+- [Epstein Exposed](https://epsteinexposed.com)
+- [Find-pdf-doc](https://www.findpdfdoc.com)
+- [Free Full PDF](https://www.freefullpdf.com)
+- [GIJN Deep Internet Research](https://gijn.org/resource/introduction-investigative-journalism-deep-internet-research)
+- [Google Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb)
+- [Google Scholar](https://scholar.google.com)
+- [Google Search Operators Guide](https://www.googleguide.com/print/adv_op_ref.pdf)
+- [Grey Guide](https://greyguide.isti.cnr.it)
+- [Grey Literature – List of Gateways](https://csulb.libguides.com/graylit)
+- [Grey Literature Strategies](https://greylitstrategies.info)
+- [GreyNet International](https://www.greynet.org)
+- [Hacking: The Art of Exploitation (book)](https://nostarch.com/hacking2.htm)
+- [HackTricks](https://book.hacktricks.xyz)
+- [HighWire: Free Online Full-text Articles](https://highwire.stanford.edu/lists/freeart.dtl)
+- [https://batumelebi.netgazeti.ge](https://batumelebi.netgazeti.ge)
+- [https://catagi.ge](https://catagi.ge)
+- [https://digitallibrary.tsu.ge](https://digitallibrary.tsu.ge)
+- [https://ecd.court.ge/FinalDocument](https://ecd.court.ge/FinalDocument)
+- [https://idfi.ge](https://idfi.ge)
+- [https://library.iliauni.edu.ge](https://library.iliauni.edu.ge)
+- [https://matsne.gov.ge/en/document/view/16426](https://matsne.gov.ge/en/document/view/16426)
+- [https://matsne.gov.ge/en/document/view/31702](https://matsne.gov.ge/en/document/view/31702)
+- [https://nplg.gov.ge](https://nplg.gov.ge)
+- [https://openlibrary.ge](https://openlibrary.ge)
+- [https://studiomonitori.ge](https://studiomonitori.ge)
+- [IEEE Xplore](https://ieeexplore.ieee.org)
+- [Installation Guide for OSINT VM](https://download.tracelabs.org/Trace-Labs-OSINT-VM-Installation-Guide-v2.pdf)
+- [International Labour Comparisons](https://www.bls.gov/fls/chartbook.htm)
+- [Journal Guide](https://www.journalguide.com)
+- [Journal Seek](https://journalseek.net)
+- [JSTOR](https://www.jstor.org)
+- [Lazy Scholar](https://www.lazyscholar.org)
+- [Leibniz Information Centre For Science and Technology University Library](https://www.tib.eu/en/search-discover)
+- [Microsoft Academic](https://academic.research.microsoft.com)
+- [Netlas Cookbook](https://academy.netlas.io)
+- [NotebookLM](https://notebooklm.google)
+- [notebooklm.google.com](https://notebooklm.google.com)
+- [NRC Research Press](https://www.nrcresearchpress.com)
+- [OA.mg](https://oa.mg)
+- [OECD Factbook](https://www.oecd-ilibrary.org/economics/oecd-factbook_18147364)
+- [Offshore Leak Database](https://offshoreleaks.icij.org)
+- [Open Access Scientific Journals](https://www.pagepress.org)
+- [Open Grey](https://www.opengrey.eu)
+- [ORCID](https://orcid.org)
+- [Osint Curious OSINT Resource List](https://docs.google.com/document/d/14li22wAG2Wh2y0UhgBjbqEvZJCDsNZY8vpUAJ_jJ5X8/edit)
+- [Otio](https://otio.ai/?ref=osint-tools)
+- [Oxford Journals](https://www.oxfordjournals.org)
+- [PDF Drive](https://www.pdfdrive.com)
+- [Pdfsearch.io](https://www.pdfsearch.io)
+- [PubMed](https://www.ncbi.nlm.nih.gov/pubmed)
+- [PubMed](https://pubmed.ncbi.nlm.nih.gov)
+- [Quetzal Search](https://www.quetzal-search.info)
+- [Real-World Bug Hunting (book)](https://nostarch.com/bughunting)
+- [Research Gate](https://www.researchgate.net)
+- [SAGE Journals](https://online.sagepub.com)
+- [Science Publications](https://www.thescipub.com)
+- [ScienceDirect](https://www.sciencedirect.com)
+- [SCIRP](https://www.scirp.org)
+- [Scite.ai](https://scite.ai)
+- [Scribd](https://www.scribd.com)
+- [Semantic Scholar](https://www.semanticscholar.org)
+- [SlideShare](https://www.slideshare.net)
+- [SlideShare Search Engine](https://cse.google.com/cse?cx=465eeeb114c7f523f)
+- [Springer](https://link.springer.com)
+- [SSRN](https://www.ssrn.com)
+- [Taylor & Francis Online](https://www.tandfonline.com)
+- [The Open Syllabus Project](https://opensyllabusproject.org)
+- [The Web Application Hacker's Handbook (book)](https://www.amazon.com/dp/1118026470)
+- [Wiley](https://www.wiley.com)
+- [World Digital Library](https://www.wdl.org)
+- [WorldCat](https://www.worldcat.org)
+- [YouLearn](https://www.youlearn.ai)
+- [Zetoc](https://zetoc.jisc.ac.uk)
+
+<a id="archives-evidence-preservation"></a>
+
+</details>
+
+---
+
+<a id="monitoring-ai-automation"></a>
+## ⚙️ Monitoring, AI & Automation
+
+News monitoring, agentic tools, AI assistance and investigation frameworks.
+
+<a id="news-media-monitoring"></a>
+<details>
+<summary><strong>📰 News, Media & Monitoring</strong> · 152 links</summary>
 
 - [1st Headlines](https://www.1stheadlines.com)
 - [4chan Search](https://4chansearch.com)
@@ -2848,157 +3327,12 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Yahoo News](https://news.yahoo.com)
 
 <a id="documents-academic-research"></a>
-## Documents, Academic & Research
 
-- [Academia](https://www.academia.edu)
-- [Academic Journals](https://www.academicjournals.org)
-- [African Journal Online](https://www.ajol.info)
-- [American Society of Civil Engineers](https://ascelibrary.org)
-- [Arrest Bookings Search and Report](https://b2.caspio.com/dp/a1a3100009b7083c53a9405f8c6b)
-- [Base](https://www.base-search.net)
-- [Beaker](https://beakernotebook.com)
-- [Bibsonomy](https://www.bibsonomy.org)
-- [ChatPDF](https://www.chatpdf.com)
-- [CIA World Factbook](https://www.cia.gov/the-world-factbook)
-- [CiteSeerX](https://citeseerx.ist.psu.edu)
-- [Consensus](https://consensus.app)
-- [ConsentTheater Playbill](https://codeberg.org/ConsentTheater/playbill)
-- [Core](https://core.ac.uk/search)
-- [CORE](https://core.ac.uk)
-- [Corrections Books Approval Search](https://b2.caspio.com/dp/0a921000cae47f9702f44d2bb94b)
-- [Crossref](https://www.crossref.org)
-- [DataInt Databook](https://databook.dataint.net)
-- [Dimensions](https://www.dimensions.ai)
-- [DocumentCloud](https://www.documentcloud.org)
-- [documentcloud.org](https://documentcloud.org)
-- [Documents Search Engine](https://cse.google.com/cse?cx=e6756edc507bcfa91)
-- [Elicit](https://elicit.com)
-- [Elsevier](https://www.elsevier.com)
-- [Epstein Exposed](https://epsteinexposed.com)
-- [Find-pdf-doc](https://www.findpdfdoc.com)
-- [Free Full PDF](https://www.freefullpdf.com)
-- [GIJN Deep Internet Research](https://gijn.org/resource/introduction-investigative-journalism-deep-internet-research)
-- [Google Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb)
-- [Google Scholar](https://scholar.google.com)
-- [Google Search Operators Guide](https://www.googleguide.com/print/adv_op_ref.pdf)
-- [Grey Guide](https://greyguide.isti.cnr.it)
-- [Grey Literature – List of Gateways](https://csulb.libguides.com/graylit)
-- [Grey Literature Strategies](https://greylitstrategies.info)
-- [GreyNet International](https://www.greynet.org)
-- [Hacking: The Art of Exploitation (book)](https://nostarch.com/hacking2.htm)
-- [HackTricks](https://book.hacktricks.xyz)
-- [HighWire: Free Online Full-text Articles](https://highwire.stanford.edu/lists/freeart.dtl)
-- [https://batumelebi.netgazeti.ge](https://batumelebi.netgazeti.ge)
-- [https://catagi.ge](https://catagi.ge)
-- [https://digitallibrary.tsu.ge](https://digitallibrary.tsu.ge)
-- [https://ecd.court.ge/FinalDocument](https://ecd.court.ge/FinalDocument)
-- [https://idfi.ge](https://idfi.ge)
-- [https://library.iliauni.edu.ge](https://library.iliauni.edu.ge)
-- [https://matsne.gov.ge/en/document/view/16426](https://matsne.gov.ge/en/document/view/16426)
-- [https://matsne.gov.ge/en/document/view/31702](https://matsne.gov.ge/en/document/view/31702)
-- [https://nplg.gov.ge](https://nplg.gov.ge)
-- [https://openlibrary.ge](https://openlibrary.ge)
-- [https://studiomonitori.ge](https://studiomonitori.ge)
-- [IEEE Xplore](https://ieeexplore.ieee.org)
-- [Installation Guide for OSINT VM](https://download.tracelabs.org/Trace-Labs-OSINT-VM-Installation-Guide-v2.pdf)
-- [International Labour Comparisons](https://www.bls.gov/fls/chartbook.htm)
-- [Journal Guide](https://www.journalguide.com)
-- [Journal Seek](https://journalseek.net)
-- [JSTOR](https://www.jstor.org)
-- [Lazy Scholar](https://www.lazyscholar.org)
-- [Leibniz Information Centre For Science and Technology University Library](https://www.tib.eu/en/search-discover)
-- [Microsoft Academic](https://academic.research.microsoft.com)
-- [Netlas Cookbook](https://academy.netlas.io)
-- [NotebookLM](https://notebooklm.google)
-- [notebooklm.google.com](https://notebooklm.google.com)
-- [NRC Research Press](https://www.nrcresearchpress.com)
-- [OA.mg](https://oa.mg)
-- [OECD Factbook](https://www.oecd-ilibrary.org/economics/oecd-factbook_18147364)
-- [Offshore Leak Database](https://offshoreleaks.icij.org)
-- [Open Access Scientific Journals](https://www.pagepress.org)
-- [Open Grey](https://www.opengrey.eu)
-- [ORCID](https://orcid.org)
-- [Osint Curious OSINT Resource List](https://docs.google.com/document/d/14li22wAG2Wh2y0UhgBjbqEvZJCDsNZY8vpUAJ_jJ5X8/edit)
-- [Otio](https://otio.ai/?ref=osint-tools)
-- [Oxford Journals](https://www.oxfordjournals.org)
-- [PDF Drive](https://www.pdfdrive.com)
-- [Pdfsearch.io](https://www.pdfsearch.io)
-- [PubMed](https://www.ncbi.nlm.nih.gov/pubmed)
-- [PubMed](https://pubmed.ncbi.nlm.nih.gov)
-- [Quetzal Search](https://www.quetzal-search.info)
-- [Real-World Bug Hunting (book)](https://nostarch.com/bughunting)
-- [Research Gate](https://www.researchgate.net)
-- [SAGE Journals](https://online.sagepub.com)
-- [Science Publications](https://www.thescipub.com)
-- [ScienceDirect](https://www.sciencedirect.com)
-- [SCIRP](https://www.scirp.org)
-- [Scite.ai](https://scite.ai)
-- [Scribd](https://www.scribd.com)
-- [Semantic Scholar](https://www.semanticscholar.org)
-- [SlideShare](https://www.slideshare.net)
-- [SlideShare Search Engine](https://cse.google.com/cse?cx=465eeeb114c7f523f)
-- [Springer](https://link.springer.com)
-- [SSRN](https://www.ssrn.com)
-- [Taylor & Francis Online](https://www.tandfonline.com)
-- [The Open Syllabus Project](https://opensyllabusproject.org)
-- [The Web Application Hacker's Handbook (book)](https://www.amazon.com/dp/1118026470)
-- [Wiley](https://www.wiley.com)
-- [World Digital Library](https://www.wdl.org)
-- [WorldCat](https://www.worldcat.org)
-- [YouLearn](https://www.youlearn.ai)
-- [Zetoc](https://zetoc.jisc.ac.uk)
-
-<a id="archives-evidence-preservation"></a>
-## Archives & Evidence Preservation
-
-- [A1 Website Download](https://www.microsystools.com/products/website-download)
-- [annas-archive](https://annas-archive.li)
-- [Archive-it.org](https://archive-it.org)
-- [Archive.is](https://archive.is)
-- [Archive.today](https://archive.ph)
-- [archived.moe](https://archived.moe)
-- [Berkeley Protocol](https://www.ohchr.org/en/publications/policy-and-methodological-publications/berkeley-protocol-digital-open-source)
-- [BlackWidow](https://softbytelabs.com/wp/blackwidow)
-- [CachedView](https://cachedview.com)
-- [CashedPages](https://www.cachedpages.com)
-- [Chrome Extension Archive Search Engine](https://cse.google.com/cse/publicurl?cx=000501358716561852263:h-5uyshsclq)
-- [Cyotek WebCopy](https://www.cyotek.com/cyotek-webcopy)
-- [Darknet Market Archives](https://www.gwern.net/DNM-archives)
-- [Debunking False Stories Archives](https://www.factcheck.org/fake-news)
-- [Extract Meta Data YouTube](https://citizenevidence.amnestyusa.org)
-- [Google News Print Archive](https://news.google.com/newspapers)
-- [Hooey webprint](https://www.hooeeywebprint.com.s3-website-us-east-1.amazonaws.com/download.html)
-- [https://archive.gov.ge](https://archive.gov.ge)
-- [https://archive.org/details/1989-tbilisi-1202408](https://archive.org/details/1989-tbilisi-1_202408)
-- [https://web.archive.org/web//.ge](https://web.archive.org/web/*/*.ge)
-- [HTTrack](https://www.httrack.com)
-- [Internet Archive](https://archive.org)
-- [Internet Archive](https://archive.org/web)
-- [IOA](https://www.io-archive.org)
-- [Mailing List Archives Search Engine](https://cse.google.com/cse/publicurl?cx=013991603413798772546:sipriovnbxq)
-- [Offliberty](https://offliberty.com)
-- [RECAP Archive](https://www.courtlistener.com/recap)
-- [Resolver](https://metaproductsrevolver.com)
-- [SiteSucker](https://ricks-apps.com/osx/sitesucker/index.html)
-- [Slack Workspaces](https://slackarchive.io)
-- [Snitch List](https://web.archive.org/web/20200115091633/http://sniitch.com/all)
-- [stored.website](https://stored.website)
-- [Wayback Machine](https://web.archive.org)
-- [waybackpy](https://pypi.org/project/waybackpy)
-- [Weather History & Data Archive](https://www.wunderground.com/history)
-- [WebAssistant](https://www.proxy-offline-browser.com/download.html)
-- [Website Ripper Copier](https://www.tensons.com/products/websiterippercopier)
-- [WITNESS](https://www.witness.org)
-
-<a id="environmental-osint"></a>
-## Environmental OSINT
-
-- [Firefox](https://www.mozilla.org)
-- [Firefox Focus](https://www.mozilla.org/en-US/firefox/browsers/mobile/focus)
-- [Lake County Fire Cameras](https://www.arcgis.com/apps/webappviewer/index.html?id=0f7aa08cc4b74fc6a0c4308d4eace6b3)
+</details>
 
 <a id="ai-agents-mcp"></a>
-## AI, Agents & MCP
+<details>
+<summary><strong>🤖 AI, Agents & MCP</strong> · 112 links</summary>
 
 - [10web](https://10web.io)
 - [AgentGPT](https://agentgpt.reworkd.ai)
@@ -3114,7 +3448,12 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Ответы](https://otvet.mail.ru)
 
 <a id="frameworks-automation"></a>
-## Frameworks & Automation
+
+</details>
+
+<a id="frameworks-automation"></a>
+<details>
+<summary><strong>⚙️ Frameworks & Automation</strong> · 28 links</summary>
 
 - [BeEF](https://beefproject.com)
 - [Bellingcat's Online Investigation Toolkit](https://bit.ly/bcattools)
@@ -3146,119 +3485,19 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Website Fingerprinting and Site Data](https://www.netcraft.com)
 
 <a id="brazil-regional"></a>
-## Brazil & Regional
 
-- [Alleba (Philippines)](https://www.alleba.com)
-- [Baidu (China)](https://www.baidu.com)
-- [Brazilian Address CEP Search and Report](https://c2abn462.caspio.com/dp/6c2d80006c6adb825b3b45079cb8)
-- [Company Research Resources by Country Comparably](https://www.comparably.com)
-- [Crime Brasil](https://crimebrasil.com.br)
-- [Daum (South Korea)](https://www.daum.net)
-- [Eniro (Sweden)](https://www.eniro.se)
-- [Gerdoo (Iran)](https://gerdoo.me)
-- [Goo (Japan)](https://www.goo.ne.jp)
-- [https://bgp.he.net/country/GE](https://bgp.he.net/country/GE)
-- [https://data.worldbank.org/country/georgia](https://data.worldbank.org/country/georgia)
-- [https://globalpublicprocurementdata.org/gppd/countryprofile/GE](https://globalpublicprocurementdata.org/gppd/country_profile/GE)
-- [https://imf.org/en/Countries/GEO](https://imf.org/en/Countries/GEO)
-- [https://ipinfo.io/countries/ge](https://ipinfo.io/countries/ge)
-- [https://nirsoft.net/countryip/getotal.html](https://nirsoft.net/countryip/ge_total.html)
-- [International Trade Center](https://www.intracen.org/ByCountry.aspx)
-- [Najdi (Slovenia)](https://www.najdi.si)
-- [Naver (South Korea)](https://www.naver.com)
-- [Onet.pl (Poland)](https://www.onet.pl)
-- [Orange (France)](https://www.orange.fr)
-- [OSINT Brazuca](https://github.com/osintbrazuca/osint-brazuca)
-- [OSINT Brazuca Papers](https://github.com/osintbrazuca/osint-papers)
-- [OSINT Brazuca Regex](https://github.com/osintbrazuca/osint-brazuca-regex)
-- [Parseek (Iran)](https://www.parseek.com)
-- [SAPO (Portugal)](https://www.sapo.pt)
-- [Search.ch (Switzerland)](https://www.search.ch)
-- [Seznam(Czech Republic)](https://seznam.cz)
-- [SoGou (China)](https://www.sogou.com)
-- [TerraBrasilis](https://terrabrasilis.dpi.inpe.br)
-- [TikTok Finder Country](https://tiktokfindercountry.xyz)
-- [UNCTAD Country Fact Sheets](https://unctad.org/en/Pages/DIAE/World%20Investment%20Report/Country-Fact-Sheets.aspx)
-- [UNCTAD Investment Country Profiles](https://unctad.org/en/Pages/Publications/Investment-country-profiles.aspx)
-- [Walla (Israel)](https://www.walla.co.il)
-- [Yandex (Russia)](https://www.yandex.com)
-- [Zarebin (Iran)](https://zarebin.ir)
+</details>
 
-<a id="lists-training-reference"></a>
-## Lists, Training & Reference
+---
 
-- [appsec.fyi OSINT Resources](https://appsec.fyi/osint.html)
-- [Aware-online.com](https://www.aware-online.com/en/osint-tools)
-- [Awesomelists.top](http://awesomelists.top)
-- [Bellingcat Online Researcher Survey: Tool Wishes](https://docs.google.com/spreadsheets/d/1vNJRMrlwI7i06diBJtRJWrvt4YuPOqlbUV5o00P_YmE/edit#gid=1378107220)
-- [bellingcat.com](https://bellingcat.com)
-- [Beyond](https://www.beyond.com)
-- [billingcat](https://challenge.bellingcat.com)
-- [Bitcoinprivacy.guide](https://bitcoinprivacy.guide)
-- [Broadcastify](https://www.broadcastify.com/listen)
-- [Browser Recommendations](https://privacyguides.org/browsers)
-- [BTFM: Blue Team Field Manual](https://www.amazon.com/dp/154101636X)
-- [CampusCareerCenter](https://www.campuscareercenter.com)
-- [CareerBuilder](https://www.careerbuilder.com)
-- [Cipherstick](https://cipherstick.tech)
-- [College Recruiter](https://www.collegerecruiter.com)
-- [ctftime.org](https://ctftime.org)
-- [CTI & OSINT Online Resources](https://docs.google.com/spreadsheets/d/1klugQqw6POlBtuzon8S0b18-gpsDwX-5OYRrB7TyNEw/edit#gid=0)
-- [CVFox](https://www.cvfox.com)
-- [Datasetlist.com](https://www.datasetlist.com)
-- [Dice](https://www.dice.com)
-- [Eluta (Canada)](https://www.eluta.ca)
-- [Eurojobs](https://www.eurojobs.com)
-- [FAROS OSINT Resources](https://start.me/p/1kvvxN/faros-osint-resources)
-- [Fish4Jobs](https://www.fish4.co.uk)
-- [gijn.org](https://gijn.org)
-- [Google Guide Advanced Operators](http://www.googleguide.com/advanced_operators_reference.html)
-- [Hacker101](https://www.hacker101.com)
-- [HackerOne Hacktivity](https://hackerone.com/hacktivity)
-- [Harmari (Unified Listings Search)](https://www.harmari.com/search/unified)
-- [Idealist](https://www.idealist.org)
-- [Indeed](https://www.indeed.com)
-- [IppSec.rocks](https://ippsec.rocks)
-- [Jobs (Poland)](https://www.jobs.pl)
-- [Jobsite (UK)](https://www.jobsite.co.uk)
-- [LeoList](https://www.leolist.cc)
-- [Listen Notes](https://www.listennotes.com)
-- [Listify](https://listify.okfnlabs.org)
-- [LiveOverflow](https://www.youtube.com/@LiveOverflow)
-- [Monster](https://www.monster.com)
-- [NahamSec](https://www.youtube.com/@nahamsec)
-- [Naukri (India)](https://www.naukri.com)
-- [OSINT Belarus](https://t.me/s/osintby)
-- [OSINT Dojo](https://www.osintdojo.com/resources)
-- [OSINT Resources in Canada](https://start.me/p/aLe0vp/osint-resources-in-canada)
-- [osintdojo.com](https://osintdojo.com)
-- [PentesterLand Bug Bounty Writeups](https://pentester.land/list-of-bug-bounty-writeups.html)
-- [PortSwigger Research](https://portswigger.net/research)
-- [Privacy Guides](https://privacyguides.org)
-- [Quite a Playlist](https://quiteaplaylist.com)
-- [RecruitEm](https://recruitin.net)
-- [Reed (UK)](https://www.reed.co.uk)
-- [RTFM: Red Team Field Manual](https://www.amazon.com/dp/B07RJG62SJ)
-- [Sanctions List Search](https://sanctionssearch.ofac.treas.gov)
-- [sans.org](https://sans.org)
-- [Seek (Australia)](https://www.seek.com.au)
-- [SEO Resources Search Engine](https://cse.google.com/cse/publicurl?cx=005797772976587943970:i7q6z1kjm1w)
-- [Shodan Cheat Sheet](https://thedarksource.com/shodan-cheat-sheet)
-- [SimplyHired](https://www.simplyhired.com)
-- [TCM Security - OSINT](https://youtu.be/qwA6MmbeGNo?si=XprgFu92D2LpKNKv)
-- [The Hitchhiker’s Guide to Online Anonymity](https://anonymousplanet.org/guide.html)
-- [The Top 132 Osint Open Source Projects](https://awesomeopensource.com/projects/osint)
-- [These Are the Tools Open Source Researchers Say They Need](https://www.bellingcat.com/resources/2022/08/12/these-are-the-tools-open-source-researchers-say-they-need)
-- [TorrentFreak List of VPNs](https://torrentfreak.com/vpn-services-anonymous-review-2017-170304)
-- [TSA No-Fly List](https://www.no-fly-list.com)
-- [Twitch Tools](https://twitch-tools.rootonline.de/followerlist_viewer.php)
-- [UNIDO Statistical Databases](https://www.unido.org/resources/statistics/statistical-databases.html)
-- [VPN Services](https://privacyguides.org/providers/vpn)
-- [weakpass.com](https://weakpass.com)
-- [ZipRecruiter](https://www.ziprecruiter.com)
+<a id="miscellaneous"></a>
+## 🧰 Miscellaneous
+
+Useful OSINT resources that do not fit cleanly into one box.
 
 <a id="other-osint-resources"></a>
-## Other OSINT Resources
+<details>
+<summary><strong>🧰 Other OSINT Resources</strong> · 775 links</summary>
 
 - [~~Framadrop~~](https://framadrop.org/en)
 - [10 Minute Tips](https://osintcurio.us/10-minute-tips)
@@ -4035,6 +4274,10 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [zoomeye](https://www.zoomeye.org)
 - [Zoopla](https://www.zoopla.co.uk)
 - [Zz.fo](https://zz.fo)
+
+---
+
+</details>
 
 ---
 
