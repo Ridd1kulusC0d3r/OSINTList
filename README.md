@@ -41,6 +41,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 
 ---
 
+<a id="search-discovery-dorks"></a>
 ## Search, Discovery & Dorks
 
 - [2lingual](https://2lingual.com)
@@ -49,7 +50,6 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Abusech](https://hunting.abuse.ch)
 - [Abuseipdb](https://www.abuseipdb.com)
 - [Academia](https://academia.edu)
-- [Ahmia](https://ahmia.fi)
 - [All Twitch Streamers Search](https://twitchstats.net/allstreamers)
 - [All-in-One](https://all-io.net)
 - [AllTheInternet](https://www.alltheinternet.com)
@@ -101,7 +101,6 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Datasetsearch.research.google.com](https://datasetsearch.research.google.com)
 - [de digger](https://www.dedigger.com)
 - [Debate.cards](http://debate.cards)
-- [DeepSearch](http://xjypo5vzgmo7jca6b322dnqbsdnp3amd24ybx26x5nxbusccjkm4pwid.onion.pet)
 - [Defuse](https://defuse.ca/pastebin.htm)
 - [developers.google.com/custom-search](https://developers.google.com/custom-search)
 - [DirBuster](https://www.owasp.org/index.php/Category:OWASP_DirBuster_Project)
@@ -283,7 +282,6 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Search Ashley Madison Leaked Data](http://checkashleymadison.com)
 - [Search Atlas](https://searchatlas.org)
 - [Search by FileType](https://cse.google.com/cse/publicurl?cx=013991603413798772546:mu-oio3a980)
-- [Search database breaches via onion services](https://pwndb2am4tzkvold.onion)
 - [Search Datasets](https://datahub.io/search)
 - [Search Engine Finder](https://cse.google.com/cse?cx=016621447308871563343:nyvaorurd5l)
 - [Search Engines Index](https://www.searchenginesindex.com)
@@ -321,7 +319,6 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [TextBin](https://textbin.net)
 - [Textbin-Code](https://textbin.online)
 - [Tools.digitalmethods.net](https://tools.digitalmethods.net/beta/searchEngineScraper)
-- [Tor2Web: Tor Hidden Services Gateway](https://tor2web.onionsearchengine.com)
 - [TRExpertWitness](https://trexpertwitness.com)
 - [TutPaste](https://tutpaste.com)
 - [Twitch Payout Search](https://sizeof.cat/project/twitch-payout-search)
@@ -357,6 +354,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Zoo Search](https://www.metacrawler.com)
 - [ZorexEye](http://zorexeye.com)
 
+<a id="people-identity-usernames"></a>
 ## People, Identity & Usernames
 
 - [192 (UK)](https://www.192.com)
@@ -565,6 +563,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [ZabaSearch](https://www.zabasearch.com)
 - [Zehef](https://github.com/N0rz3/Zehef)
 
+<a id="email"></a>
 ## Email
 
 - [10minutemail.com](https://10minutemail.com)
@@ -621,6 +620,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [voilanorbert.com](https://voilanorbert.com)
 - [ZMail](https://zmail.sourceforge.net)
 
+<a id="phone"></a>
 ## Phone
 
 - [AccountAnalysis](https://accountanalysis.app)
@@ -635,7 +635,6 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Facebook Live Map](https://www.facebook.com/livemap)
 - [Facebook Photo Search Engine](https://cse.google.com/cse/publicurl?cx=013991603413798772546:jyvyp2ppxma)
 - [Facebook Profile Directory](https://www.facebook.com/directory)
-- [Facebook Scraped Data search](http://4wbwa6vcpvcr3vvf4qkhppgy56urmjcj2vagu2iqgp3z656xcmfdbiqd.onion.to)
 - [Facebook Search](https://www.social-searcher.com/facebook-search)
 - [Facebook Search Engine](https://cse.google.com/cse?cx=95ae46262a5f2958e)
 - [Facebook Video Downloader](https://fbdown.github.io)
@@ -723,6 +722,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Windows Phone IMEI Generator](https://wpimeigenerator.github.io)
 - [ZLOOKUP](https://www.zlookup.com)
 
+<a id="social-media"></a>
 ## Social Media
 
 - [@murphlive](https://twitter.com/murph_live)
@@ -1041,6 +1041,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Дезертир](https://vk.com/app3046467)
 - [Фари](https://telegram.me/faribybot)
 
+<a id="domains-ip-cyber-intelligence"></a>
 ## Domains, IP & Cyber Intelligence
 
 - [aa419 Fake Sites Database](https://db.aa419.org/fakebankslist.php)
@@ -1342,6 +1343,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [You Get Signal](https://www.yougetsignal.com)
 - [ZettelForge](https://github.com/ThreatRecall/zettelforge)
 
+<a id="code-repository-osint"></a>
 ## Code & Repository OSINT
 
 - [@Ivan30394639 OSINT tools collection](https://cipher387.github.io/osint_stuff_tool_collection)
@@ -1356,7 +1358,6 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [agent-pulse](https://github.com/barretlee/agent-pulse)
 - [Agentset](https://github.com/agentset-ai/agentset)
 - [AH-OSINT](https://github.com/ArunHax/AH-OSINT)
-- [Ahmia](https://github.com/ahmia/ahmia-site)
 - [AI Exploits](https://github.com/protectai/ai-exploits)
 - [AIL Framework](https://github.com/ail-project/ail-framework)
 - [Aleph](https://github.com/alephdata/aleph)
@@ -1720,7 +1721,6 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [psnmonitor](https://github.com/misiektoja/psn_monitor)
 - [PublicWWW](https://publicwww.com)
 - [Puncia](https://github.com/ARPSyndicate/puncia)
-- [PyAhmia](https://github.com/rly0nheart/pyahmia)
 - [pyannote.audio](https://github.com/pyannote/pyannote-audio)
 - [Pyba](https://github.com/fauvidoTechnologies/PyBrowserAutomation)
 - [pygreynoise](https://github.com/GreyNoise-Intelligence/pygreynoise)
@@ -1878,6 +1878,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [ZOOM URL Generator](https://skyzh.github.io/zoom-url-generator)
 - [ZotPilot](https://github.com/xunhe730/ZotPilot)
 
+<a id="images-video-metadata"></a>
 ## Images, Video & Metadata
 
 - [4n6img](https://4n6img.com)
@@ -2056,6 +2057,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [Zapmeta](https://www.zapmeta.com)
 
+<a id="geoint-maps-satellite"></a>
 ## GEOINT, Maps & Satellite
 
 - [Active Agency Map](https://www.google.com/maps/d/viewer?mid=1eYVDPh5itXq5acDT9b0BVeQwmESBa4cB)
@@ -2364,6 +2366,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Zoom Earth](https://zoom.earth)
 - [Zscaler Global Threat Map Dashboard](https://threatlabz.zscaler.com/cloud-insights/threat-map-dashboard)
 
+<a id="transport-maritime-space"></a>
 ## Transport, Maritime & Space
 
 - [ADS-B Exchange](https://globe.adsbexchange.com)
@@ -2401,6 +2404,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [VINCheck.info](https://vincheck.info)
 - [Voidly Censorship Index](https://voidly.ai/censorship-index)
 
+<a id="companies-finance-blockchain"></a>
 ## Companies, Finance & Blockchain
 
 - [@cryptoamlscanbot](https://t.me/cryptoamlscan_bot)
@@ -2563,6 +2567,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [YouControl](https://youcontrol.com.ua/en)
 - [ZoomInfo](https://www.zoominfo.com)
 
+<a id="public-records-government"></a>
 ## Public Records & Government
 
 - [AL Local Surety Association Directory](https://c0gaf106.caspio.com/dp/2d4e1000c7506b7686a540d3b10f)
@@ -2686,6 +2691,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [York County VA 2017 Public Salaries](https://b2.caspio.com/dp/0a921000b12e238357df42e7affc)
 - [zillow.com](https://zillow.com)
 
+<a id="news-media-monitoring"></a>
 ## News, Media & Monitoring
 
 - [1st Headlines](https://www.1stheadlines.com)
@@ -2841,6 +2847,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Yahoo Groups](https://groups.yahoo.com)
 - [Yahoo News](https://news.yahoo.com)
 
+<a id="documents-academic-research"></a>
 ## Documents, Academic & Research
 
 - [Academia](https://www.academia.edu)
@@ -2941,6 +2948,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [YouLearn](https://www.youlearn.ai)
 - [Zetoc](https://zetoc.jisc.ac.uk)
 
+<a id="archives-evidence-preservation"></a>
 ## Archives & Evidence Preservation
 
 - [A1 Website Download](https://www.microsystools.com/products/website-download)
@@ -2982,12 +2990,14 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Website Ripper Copier](https://www.tensons.com/products/websiterippercopier)
 - [WITNESS](https://www.witness.org)
 
+<a id="environmental-osint"></a>
 ## Environmental OSINT
 
 - [Firefox](https://www.mozilla.org)
 - [Firefox Focus](https://www.mozilla.org/en-US/firefox/browsers/mobile/focus)
 - [Lake County Fire Cameras](https://www.arcgis.com/apps/webappviewer/index.html?id=0f7aa08cc4b74fc6a0c4308d4eace6b3)
 
+<a id="ai-agents-mcp"></a>
 ## AI, Agents & MCP
 
 - [10web](https://10web.io)
@@ -3103,6 +3113,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [ZoomEye](https://www.zoomeye.ai)
 - [Ответы](https://otvet.mail.ru)
 
+<a id="frameworks-automation"></a>
 ## Frameworks & Automation
 
 - [BeEF](https://beefproject.com)
@@ -3134,6 +3145,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [TOOLKIT](https://start.me/p/W1AXYo/toolkit)
 - [Website Fingerprinting and Site Data](https://www.netcraft.com)
 
+<a id="brazil-regional"></a>
 ## Brazil & Regional
 
 - [Alleba (Philippines)](https://www.alleba.com)
@@ -3172,6 +3184,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Yandex (Russia)](https://www.yandex.com)
 - [Zarebin (Iran)](https://zarebin.ir)
 
+<a id="lists-training-reference"></a>
 ## Lists, Training & Reference
 
 - [appsec.fyi OSINT Resources](https://appsec.fyi/osint.html)
@@ -3244,6 +3257,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [weakpass.com](https://weakpass.com)
 - [ZipRecruiter](https://www.ziprecruiter.com)
 
+<a id="other-osint-resources"></a>
 ## Other OSINT Resources
 
 - [~~Framadrop~~](https://framadrop.org/en)
@@ -3478,7 +3492,6 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Hashatit](https://www.hashatit.com)
 - [Hashes.com](https://hashes.com/en/decrypt/hash)
 - [haveibeenpwned.com/API](https://haveibeenpwned.com/API)
-- [Hidden Answers](http://answerszuvs3gg2l64e6hmnryudl5zgrmwm3vh65hzszdghblddvfiqd.onion)
 - [hide.me VPN](https://hide.me/en)
 - [Highcharts](https://www.highcharts.com)
 - [HIS Piers](https://www.ihs.com/products/piers.html)
@@ -3766,7 +3779,6 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Project Owl](https://projowl.org)
 - [Project Whispers](https://whispers.ddosecrets.com)
 - [Proofread Bot](https://proofreadbot.com)
-- [ProPublica](https://p53lf57qovyuvwsc6xnrppyply3vtqm7l6pcobkmyqsiofyeznfu5uqd.onion)
 - [Prospeo](https://prospeo.io)
 - [proton.me](https://proton.me)
 - [ProtonVPN](https://protonvpn.com)
@@ -3790,7 +3802,6 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Random Face Generator](https://fakeinfo.net/random-face-generator)
 - [RandTap](https://randtap.com)
 - [Ransomware Darknet websites](https://sizeof.cat/post/ransomware-darknet-websites)
-- [Ransomware Group Sites](http://ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd.onion.pet)
 - [ransomwatch 👀 🦅](https://ransomwatch.telemetry.ltd/#/INDEX)
 - [RAW](https://raw.densitydesign.org)
 - [Realtor](https://www.realtor.com)
@@ -3816,7 +3827,6 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [ScamAdviser](https://www.scamadviser.com)
 - [Sci-Bot](https://sci-bot.ru)
 - [Sci-hub](https://sci-hub.st)
-- [Sci-Hub](http://scihub22266oqcxt.onion)
 - [Secret Surveillance Catalogue](https://theintercept.com/surveillance-catalogue)
 - [Secure password breach checks](https://passwordrecovery.io)
 - [securedrop.org](https://securedrop.org)
@@ -4017,7 +4027,6 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [youtubetranscript](https://youtubetranscript.com)
 - [yt-dlp](https://pypi.org/project/yt-dlp)
 - [Yumpu](https://www.yumpu.com)
-- [Z-lib.org](https://zlibrary24tuxziyiyfr7zd46ytefdqbqd2axkmxm4o5374ptpc52fad.onion.pet)
 - [zaproxy.org](https://zaproxy.org)
 - [ZeroBounce](https://www.zerobounce.net)
 - [Zerodium](https://zerodium.com)
