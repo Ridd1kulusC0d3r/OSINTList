@@ -15,15 +15,15 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 
 ## Directory
 
-**3,923 unique links** consolidated and deduplicated from multiple OSINT ecosystems.
+**3,911 unique links** consolidated and deduplicated from multiple OSINT ecosystems.
 
-- [Search, Discovery & Dorks](#search-discovery-dorks) — 313
+- [Search, Discovery & Dorks](#search-discovery-dorks) — 309
 - [People, Identity & Usernames](#people-identity-usernames) — 205
 - [Email](#email) — 53
-- [Phone](#phone) — 99
+- [Phone](#phone) — 98
 - [Social Media](#social-media) — 315
 - [Domains, IP & Cyber Intelligence](#domains-ip-cyber-intelligence) — 298
-- [Code & Repository OSINT](#code-repository-osint) — 533
+- [Code & Repository OSINT](#code-repository-osint) — 531
 - [Images, Video & Metadata](#images-video-metadata) — 175
 - [GEOINT, Maps & Satellite](#geoint-maps-satellite) — 305
 - [Transport, Maritime & Space](#transport-maritime-space) — 34
@@ -37,7 +37,7 @@ Use `Ctrl/Cmd + F`, pick a category, open the resource and investigate.
 - [Frameworks & Automation](#frameworks-automation) — 28
 - [Brazil & Regional](#brazil-regional) — 35
 - [Lists, Training & Reference](#lists-training-reference) — 69
-- [Other OSINT Resources](#other-osint-resources) — 780
+- [Other OSINT Resources](#other-osint-resources) — 775
 
 ---
 
