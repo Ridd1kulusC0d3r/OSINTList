@@ -4,8 +4,7 @@
 
 A visual, centralized directory of OSINT tools, websites, repositories and reference lists.
 
-**OSINTList is intentionally simple:** no methodology layer, no case management, no knowledge graph backend.  
-The entire catalogue lives on this page. Browse by theme, expand a category, or use `Ctrl/Cmd + F`.
+**OSINTList stays intentionally simple:** the entire catalogue lives on this page. Browse by theme, expand a category, follow a pivot, or use `Ctrl/Cmd + F`.
 
 ## Related projects
 
@@ -17,81 +16,80 @@ The entire catalogue lives on this page. Browse by theme, expand a category, or 
 
 ## At a glance
 
-**3,911 unique links · 21 categories · 7 macro-themes**
+**3,847 curated links · 27 categories · 8 macro-themes**
 
-| Theme | Coverage | Links |
-|---|---|---:|
-| 🧭 **Discovery & Reference** | Search, Discovery & Dorks · Lists, Training & Reference | **378** |
-| 👤 **People & Identity** | People, Identity & Usernames · Email · Phone · Social Media | **671** |
-| 🌐 **Cyber & Digital Footprint** | Domains, IP & Cyber Intelligence · Code & Repository OSINT · Archives & Evidence Preservation | **867** |
-| 🗺️ **Media, GEOINT & Physical World** | Images, Video & Metadata · GEOINT, Maps & Satellite · Transport, Maritime & Space · Environmental OSINT | **517** |
-| 🏛️ **Organizations, Records & Research** | Companies, Finance & Blockchain · Public Records & Government · Brazil & Regional · Documents, Academic & Research | **411** |
-| ⚙️ **Monitoring, AI & Automation** | News, Media & Monitoring · AI, Agents & MCP · Frameworks & Automation | **292** |
-| 🧰 **Miscellaneous** | Other OSINT Resources | **775** |
+| Theme | Links |
+|---|---:|
+| 🧭 **Discovery & Reference** | **378** |
+| 👤 **People & Identity** | **696** |
+| 🌐 **Cyber & Digital Footprint** | **900** |
+| 🗺️ **Media, GEOINT & Physical World** | **517** |
+| 🏛️ **Organizations, Records & Data** | **555** |
+| 🧩 **Analyst Workspace & Utilities** | **370** |
+| ⚙️ **Monitoring, AI & Automation** | **307** |
+| 🧰 **Community & Miscellaneous** | **124** |
 
 ## OSINT thematic map
 
 ```mermaid
 mindmap
   root((OSINTList))
-    Discovery & Reference
-      Search engines
-      Dorks
-      Curated lists
-      Training
+    Discovery
+      Search & Dorks
+      Curated Lists
     People & Identity
       Usernames
       Email
       Phone
-      Social media
-    Cyber & Digital Footprint
-      Domains
-      IP & ASN
-      Code repositories
-      Web archives
+      Social Media
+    Cyber Footprint
+      Domains & IP
+      Code Repositories
+      Archives
     Media & GEOINT
-      Images
-      Video
-      Metadata
-      Maps
-      Satellite
+      Images & Video
+      Maps & Satellite
       Transport
       Environment
-    Organizations & Records
+    Records & Data
       Companies
-      Finance
-      Public records
-      Brazil & regional
+      Public Records
+      Brazil & Regional
       Documents
-      Academic research
-    Monitoring & Automation
-      News
+      Open Data
+    Analyst Workspace
+      Privacy & Browsers
+      Visualization
+      Utilities
+    Automation
       Monitoring
-      AI
-      MCP
+      AI & MCP
+      APIs
       Frameworks
+    Community
+      Organizations
+      Blogs
+      Miscellaneous
 ```
 
-## Pivot map
+## Investigation pivot map
 
 ```mermaid
 flowchart LR
-    A[Start with what you have] --> B{Input}
+    A[Start with a clue] --> B{What do you have?}
     B --> U[Username / Name]
-    B --> E[Email]
-    B --> P[Phone]
+    B --> E[Email / Phone]
     B --> D[Domain / IP]
     B --> M[Image / Video]
-    B --> C[Company]
+    B --> C[Company / Record]
     B --> L[Location]
-    U --> S[People & Social Media]
-    E --> S
-    P --> S
-    D --> I[Cyber & Digital Footprint]
+    U --> P[People & Social]
+    E --> P
+    D --> I[Cyber Footprint]
     M --> G[Media & GEOINT]
     L --> G
-    C --> R[Organizations & Public Records]
-    S --> X[Pivot to new identifiers]
+    C --> R[Records & Data]
+    P --> X[New identifiers]
     I --> X
     G --> X
     R --> X
@@ -114,28 +112,29 @@ flowchart LR
 | Company / organization | [Companies, Finance & Blockchain](#companies-finance-blockchain) |
 | Public record / government clue | [Public Records & Government](#public-records-government) |
 | Brazil-specific target | [Brazil & Regional](#brazil-regional) |
-| News event / topic | [News, Media & Monitoring](#news-media-monitoring) |
-| Document / paper / PDF | [Documents, Academic & Research](#documents-academic-research) |
+| Dataset / statistics | [Data, Statistics & Open Data](#data-statistics-open-data) |
 | Old or deleted page | [Archives & Evidence Preservation](#archives-evidence-preservation) |
-| Need automation | [Frameworks & Automation](#frameworks-automation) |
-| Need AI-assisted tools | [AI, Agents & MCP](#ai-agents-mcp) |
+| Need graphing / visualization | [Visualization, Graphs & Timelines](#visualization-graphs-timelines) |
+| Need privacy / browser tooling | [Privacy, OPSEC & Browsers](#privacy-opsec-browsers) |
+| Need automation / API | [Monitoring, AI & Automation](#monitoring-ai-automation) |
 
 ## Theme index
 
 - 🧭 [**Discovery & Reference**](#discovery-reference) — 378 links
-- 👤 [**People & Identity**](#people-identity) — 671 links
-- 🌐 [**Cyber & Digital Footprint**](#cyber-digital-footprint) — 867 links
+- 👤 [**People & Identity**](#people-identity) — 696 links
+- 🌐 [**Cyber & Digital Footprint**](#cyber-digital-footprint) — 900 links
 - 🗺️ [**Media, GEOINT & Physical World**](#media-geoint-physical-world) — 517 links
-- 🏛️ [**Organizations, Records & Research**](#organizations-records-research) — 411 links
-- ⚙️ [**Monitoring, AI & Automation**](#monitoring-ai-automation) — 292 links
-- 🧰 [**Miscellaneous**](#miscellaneous) — 775 links
+- 🏛️ [**Organizations, Records & Data**](#organizations-records-data) — 555 links
+- 🧩 [**Analyst Workspace & Utilities**](#analyst-workspace-utilities) — 370 links
+- ⚙️ [**Monitoring, AI & Automation**](#monitoring-ai-automation) — 307 links
+- 🧰 [**Community & Miscellaneous**](#community-miscellaneous) — 124 links
 
 ---
 
 <a id="discovery-reference"></a>
 ## 🧭 Discovery & Reference
 
-Start here: search engines, dorks, curated lists and broad resource discovery.
+Search engines, dorks, curated lists and broad resource discovery.
 
 <a id="search-discovery-dorks"></a>
 <details>
@@ -451,8 +450,6 @@ Start here: search engines, dorks, curated lists and broad resource discovery.
 - [Zoo Search](https://www.metacrawler.com)
 - [ZorexEye](http://zorexeye.com)
 
-<a id="people-identity-usernames"></a>
-
 </details>
 
 <a id="lists-training-reference"></a>
@@ -528,8 +525,6 @@ Start here: search engines, dorks, curated lists and broad resource discovery.
 - [VPN Services](https://privacyguides.org/providers/vpn)
 - [weakpass.com](https://weakpass.com)
 - [ZipRecruiter](https://www.ziprecruiter.com)
-
-<a id="other-osint-resources"></a>
 
 </details>
 
@@ -750,8 +745,6 @@ Identity pivots across usernames, email, phone and social platforms.
 - [ZabaSearch](https://www.zabasearch.com)
 - [Zehef](https://github.com/N0rz3/Zehef)
 
-<a id="email"></a>
-
 </details>
 
 <a id="email"></a>
@@ -811,8 +804,6 @@ Identity pivots across usernames, email, phone and social platforms.
 - [VoilaNorbert](https://www.voilanorbert.com)
 - [voilanorbert.com](https://voilanorbert.com)
 - [ZMail](https://zmail.sourceforge.net)
-
-<a id="phone"></a>
 
 </details>
 
@@ -919,16 +910,15 @@ Identity pivots across usernames, email, phone and social platforms.
 - [Windows Phone IMEI Generator](https://wpimeigenerator.github.io)
 - [ZLOOKUP](https://www.zlookup.com)
 
-<a id="social-media"></a>
-
 </details>
 
 <a id="social-media"></a>
 <details>
-<summary><strong>💬 Social Media</strong> · 315 links</summary>
+<summary><strong>💬 Social Media</strong> · 340 links</summary>
 
 - [@murphlive](https://twitter.com/murph_live)
 - [220vk.com](https://220vk.com)
+- [ActiveTK](https://www.activetk.jp/tools/yt-not-well-known)
 - [Advanced Instagram and Facebook Search](https://wopita.com)
 - [AgentFNSBot](https://t.me/AgentFNS_bot)
 - [Analyze User Activity and Sleep Patterns](http://sleepingtime.org)
@@ -948,6 +938,7 @@ Identity pivots across usernames, email, phone and social platforms.
 - [CCTV](https://github.com/IvanGlinkin/CCTV)
 - [ChatSearchRobot](https://t.me/ChatSearchRobot)
 - [ClerkBot](https://t.me/clerksecretbot)
+- [Clubhouse Database](https://clubhousedb.com)
 - [creationdatebot](https://t.me/creationdatebot)
 - [CryptoBot](https://t.me/CryptoBot)
 - [csvkit](https://github.com/wireservice/csvkit)
@@ -988,6 +979,8 @@ Identity pivots across usernames, email, phone and social platforms.
 - [Fake Tiktok Profile Generator](https://fakeinfo.net/fake-tiktok-profile-generator)
 - [Fanpage Karma](https://www.fanpagekarma.com)
 - [Fb-sleep-stats](https://github.com/sqren/fb-sleep-stats)
+- [Feeds.talonvoice.com](https://feeds.talonvoice.com)
+- [Filmot](https://https://filmot.com)
 - [Find Instagram User ID](https://codeofaninja.com/tools/find-instagram-user-id)
 - [Find my Facebook ID](https://randomtools.io)
 - [Find Telegram Channels/Bots/Groups](https://xtea.io/ts_en.html)
@@ -1002,16 +995,24 @@ Identity pivots across usernames, email, phone and social platforms.
 - [Global Telegram Database](https://t.me/s/privatelinks)
 - [Google+ & LinkedIn](https://one-plus.github.io/G+Link)
 - [GroupDa](https://groupda.com/telegram/group/search)
+- [Groupio](https://en.groupio.app)
+- [Hadzy.com](https://hadzy.com)
 - [Hashtags for Likes](https://hashtagsforlikes.co)
 - [haveibeenzuckered](https://haveibeenzuckered.com)
 - [here](https://www.reddit.com/r/pushshift)
 - [HimeraSearch](https://t.me/HimeraNeGBL8Pro1dp_Search_bot)
 - [Hootsuite](https://hootsuite.com)
 - [hootsuite.com](https://www.hootsuite.com)
+- [https://1tv.ge](https://1tv.ge)
+- [https://amerikiskhma.com](https://amerikiskhma.com)
 - [https://facebook.com/search](https://facebook.com/search)
 - [https://github.com/drawrowfly/tiktok-scraper](https://github.com/drawrowfly/tiktok-scraper)
 - [https://kavkasia.ge](https://kavkasia.ge)
 - [https://linkedin.com](https://linkedin.com)
+- [https://mtavari.tv](https://mtavari.tv)
+- [https://radiotavisupleba.ge](https://radiotavisupleba.ge)
+- [https://rustavi2.ge](https://rustavi2.ge)
+- [https://tvpirveli.ge](https://tvpirveli.ge)
 - [hwosint (@harrywald80)](https://twitter.com/harrywald80)
 - [HypeAuditor](https://hypeauditor.com)
 - [Iconosquare](https://iconosquare.com)
@@ -1091,6 +1092,8 @@ Identity pivots across usernames, email, phone and social platforms.
 - [Pushshift API](https://pushshift.io)
 - [Pushshift API Guide](https://github.com/pushshift/api)
 - [r/RealOrAI](https://www.reddit.com/r/RealOrAI)
+- [Radio-Locator](https://radio-locator.com)
+- [RadioReference](https://www.radioreference.com/apps/db)
 - [Readergram.com](https://readergram.com)
 - [REDARCS](https://the-eye.eu/redarcs)
 - [Reddit](https://www.reddit.com)
@@ -1115,6 +1118,7 @@ Identity pivots across usernames, email, phone and social platforms.
 - [Reveddit.com](https://www.reveddit.com)
 - [RiteTag](https://ritetag.com)
 - [Rival IQ](https://www.rivaliq.com)
+- [Rooms of Clubhouse](https://roomsofclubhouse.com)
 - [SangMata (beta)](https://t.me/SangMata_beta_bot)
 - [SangMataInfobot](https://t.me/SangMataInfo_bot)
 - [Savefrom.net](https://savefrom.net)
@@ -1205,6 +1209,9 @@ Identity pivots across usernames, email, phone and social platforms.
 - [TweetMap](https://mapd.csail.mit.edu/tweetmap)
 - [TweetMap](https://github.com/cga-harvard/Data_Science_Big_Data_Projects/tree/master/scripts/Geotweets)
 - [twikit](https://github.com/d60/twikit)
+- [Twitch Following](https://cactus.tools/twitch/following)
+- [Twitchmetrics.net](https://www.twitchmetrics.net)
+- [TwitchTracker](https://twitchtracker.com)
 - [Twitter](https://twitter.com)
 - [Twitter](https://twitter.com/MrCl0wnLab)
 - [Twitter](https://twitter.com/C4nh0t0GH)
@@ -1230,6 +1237,7 @@ Identity pivots across usernames, email, phone and social platforms.
 - [vk.watch/ID/profile](https://vk.watch/ID/profile)
 - [VK5](https://vk5.city4me.com)
 - [VKontakte](https://vk.com)
+- [WACheck](https://wacheck.online)
 - [WATools](https://watools.io)
 - [WhoisDomBot](https://t.me/WhoisDomBot)
 - [Wolfram Alpha Facebook Report](https://www.wolframalpha.com/input/?i=facebook+report)
@@ -1240,10 +1248,14 @@ Identity pivots across usernames, email, phone and social platforms.
 - [Xquik](https://xquik.com)
 - [yesitsme](https://github.com/blackeko/yesitsme)
 - [yesitsme](https://github.com/0x0be/yesitsme)
+- [Yout](https://yout.com)
+- [Youtube channel ID](https://commentpicker.com/youtube-channel-id.php)
+- [YouTube Comment Finder](https://ytcomment.kmcat.uk)
+- [Youtube Comments Downloader](https://youtubecommentsdownloader.com)
+- [youtubetranscript](https://youtubetranscript.com)
+- [yt-dlp](https://pypi.org/project/yt-dlp)
 - [Дезертир](https://vk.com/app3046467)
 - [Фари](https://telegram.me/faribybot)
-
-<a id="domains-ip-cyber-intelligence"></a>
 
 </details>
 
@@ -1256,7 +1268,7 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 
 <a id="domains-ip-cyber-intelligence"></a>
 <details>
-<summary><strong>🌐 Domains, IP & Cyber Intelligence</strong> · 298 links</summary>
+<summary><strong>🌐 Domains, IP & Cyber Intelligence</strong> · 328 links</summary>
 
 - [aa419 Fake Sites Database](https://db.aa419.org/fakebankslist.php)
 - [Accuranker](https://www.accuranker.com)
@@ -1271,6 +1283,7 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [Awesome ML for Cybersecurity](https://github.com/jivoi/awesome-ml-for-cybersecurity)
 - [awesome-threat-intelligence](https://github.com/hslatman/awesome-threat-intelligence)
 - [Azure Tenant Resolution by PingCastle](https://tenantresolution.pingcastle.com)
+- [Baton Rouge Traffic Cams](https://www.arcgis.com/apps/webappviewer/index.html?id=0ec05ffb0d2d4735a969e8f31f820a7b)
 - [Bgpview.io](https://bgpview.io)
 - [Bi.Zone](https://gti.bi.zone)
 - [Bing Webmaster Tools](https://www.bing.com/toolbox/webmaster)
@@ -1280,6 +1293,7 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [BrightCloud Threat Intelligence](https://brightcloud.com)
 - [Browserling](https://www.browserling.com)
 - [BuiltWith](https://builtwith.com)
+- [Camhacker.com](https://www.camhacker.com)
 - [CC.LA](https://cc.la)
 - [Censys](https://censys.io/domain)
 - [Censys](https://censys.io)
@@ -1287,8 +1301,12 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [Center for International Earth Science Information Network](https://www.ciesin.org)
 - [Central Ops](https://centralops.net)
 - [Cerast Intelligence](https://search.cerast-intelligence.com)
+- [CertGrep](https://certgrep.sh)
 - [Certificate Search](https://osint.sh/crt)
 - [CertKit Certificate Search](https://www.certkit.io/tools/ct-logs)
+- [city-webcams.com](https://city-webcams.com)
+- [Cloudflare Resolver](http://www.skypeipresolver.net/cloudflare.php)
+- [Cloudflare Resolver Tool](https://shadowcrypt.net/tools/cloudflare)
 - [CloudRip](https://github.com/moscovium-mc/CloudRip)
 - [Columbus Project](https://github.com/elmasy-com/columbus)
 - [Comprehensive Subdomain Enumeration](https://github.com/OWASP/Amass)
@@ -1349,6 +1367,7 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [ETDA](https://apt.etda.or.th/cgi-bin/listgroups.cgi)
 - [Exonera Tor](https://exonerator.torproject.org)
 - [exploit-database-papers](https://github.com/offensive-security/exploitdb-papers)
+- [Explorecams.com](https://explorecams.com)
 - [Find Subdomains of a Domain](https://pentest-tools.com/information-gathering/find-subdomains-of-domain#)
 - [Findomain](https://github.com/Findomain/Findomain)
 - [Flashpoint](https://flashpoint.io)
@@ -1370,6 +1389,7 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [Harpoon](https://github.com/Te-k/harpoon)
 - [Hatching Triage](https://tria.ge)
 - [HoneyLabs](https://honeylabs.net)
+- [Hong Kong Traffic Data & Cams](https://www.arcgis.com/apps/dashboards/47be6372a0434beaba99ae9c9f1d598d)
 - [HostHunter](https://github.com/SpiderLabs/HostHunter)
 - [https://nic.ge](https://nic.ge)
 - [https://nic.ge/en/domains/whois](https://nic.ge/en/domains/whois)
@@ -1380,6 +1400,7 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [IANA — Root Zone Database](https://www.iana.org/domains/root/db)
 - [Icann Lookup](https://lookup.icann.org/en/lookup)
 - [Infosniper](https://www.infosniper.net)
+- [Insecam](http://www.insecam.org)
 - [Intel471](https://intel471.com)
 - [Interactive Online Malware Analysis Sandbox](https://app.any.run)
 - [IntoDNS.ai](https://intodns.ai)
@@ -1389,6 +1410,7 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [IP search - Network Entity Reputation Database](https://nerd.cesnet.cz/nerd/ips)
 - [IP.THC.ORG](https://ip.thc.org)
 - [IPFingerprints](https://www.ipfingerprints.com)
+- [IPinfo](https://ipinfo.io)
 - [IPOK](https://ipok.io)
 - [IPVoid](https://www.ipvoid.com)
 - [isMalicious](https://ismalicious.com)
@@ -1400,7 +1422,10 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [KNOWLEDGENOW](https://know.netenrich.com/content/track/threat-actor)
 - [lazarusholic](https://lazarus.day/actors)
 - [Leaked.domains](https://leaked.domains)
+- [LeakIX](https://leakix.net)
 - [live demo](https://whitebite.github.io/Domain-Hunter)
+- [Live World Webcam](http://liveworldwebcam.net)
+- [Lubbock Live Traffic Cameras](https://www.arcgis.com/apps/webappviewer/index.html?id=affe50ac55824c7a8c757d3980787e31)
 - [Lunar Cyber](https://lunarcyber.com)
 - [Majestic](https://majestic.com)
 - [Malpedia](https://malpedia.caad.fkie.fraunhofer.de/actors)
@@ -1428,9 +1453,11 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [MISP Galaxy](https://www.misp-galaxy.org/360net)
 - [MISP MCP](https://github.com/MISP/misp-mcp)
 - [MISP Modules](https://github.com/MISP/misp-modules)
+- [MITRE D3FEND](https://d3fend.mitre.org)
 - [Mixi (Japan)](https://mixi.jp)
 - [Mnemonic Passive DNS](https://passivedns.mnemonic.no)
 - [Netcraft Site Report](https://toolbar.netcraft.com/site_report?url=undefined#last_reboot)
+- [Netlas.io](https://netlas.io)
 - [Network Tool](https://osome.iu.edu/tools/networks/#)
 - [NewsWhip](https://www.newswhip.com)
 - [Odnoklassniki (Russia)](https://ok.ru)
@@ -1441,6 +1468,7 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [OPENHUNTING.IO](https://openhunting.io/threat-library)
 - [OpenLinkProfiler](https://www.openlinkprofiler.org)
 - [openSquat](https://github.com/atenreiro/opensquat)
+- [Opentopia](http://www.opentopia.com)
 - [ORA-LITE](https://www.cmu.edu/casos-center/research/tools)
 - [OSINT LLM](https://huggingface.co/spaces/tomvaillant/osint-llm)
 - [OSINT MCP Gateway](https://github.com/bonetrees/osint-mcp-gateway)
@@ -1455,6 +1483,7 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [PhishStats](https://phishstats.info)
 - [Polyswarm](https://polyswarm.network)
 - [Probe for Live Domains](https://github.com/tomnomnom/httprobe)
+- [PSN Resolver](https://playstationresolver.xyz)
 - [Pulsedive](https://pulsedive.com)
 - [Qualys SSL Check](https://www.ssllabs.com/ssltest)
 - [Quantcast](https://www.quantcast.com)
@@ -1473,15 +1502,18 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [SANS OSINT](https://www.sans.org/cyber-security-courses/open-source-intelligence-gathering)
 - [ScanMalware](https://scanmalware.com)
 - [ScienceDomain](https://www.sciencedomain.org)
+- [Security Onion](https://securityonionsolutions.com)
 - [SecurityTrails](https://securitytrails.com/dns-trails)
 - [Sentinel Visualizer](https://www.fmsasg.com)
 - [SEO Chat Tools](https://tools.seochat.com)
 - [SEOTools for Excel](https://seotoolsforexcel.com)
+- [Shodan](https://shodan.io)
 - [Shodan MCP](https://github.com/w0h1v/mcp-shodan)
 - [Shuffledns](https://github.com/projectdiscovery/shuffledns)
 - [Similar Web](https://www.similarweb.com)
 - [SmallSEOTools](https://smallseotools.com)
 - [snippet.host](https://snippet.host)
+- [Spyse](https://spyse.com)
 - [Squatm3gator](https://github.com/david3107/squatm3gator)
 - [StatsCrop](https://www.statscrop.com)
 - [STIX Viewer](https://stix-viewer.threatlandscape.io)
@@ -1495,6 +1527,8 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [Thales](https://cds.thalesgroup.com/en/cyberthreat/attacks-page)
 - [The Webcam Network](http://www.the-webcam-network.com)
 - [theZoo](https://github.com/ytisf/theZoo)
+- [thingful](http://www.thingful.net)
+- [Thingful](https://www.thingful.net)
 - [Threads](https://www.threads.net)
 - [Threat Intelligence AI](https://threatlandscape.ai)
 - [Threat Landscape](https://threatlandscape.io)
@@ -1509,6 +1543,7 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [ThreatSwarm](https://github.com/mukul975/Threatswarm)
 - [Tinder](https://www.gotinder.com)
 - [TinyScan](https://www.tiny-scan.com)
+- [Toronto area Live Traffic Cams](https://gtaupdate.com/traffic)
 - [TracerouteVisualizer](https://kriztalz.sh/traceroute-visualizer)
 - [urlDNA](https://urldna.io)
 - [URLhaus](https://urlhaus.abuse.ch)
@@ -1518,6 +1553,8 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [Vacato](https://vacato.io)
 - [Validin](https://app.validin.com)
 - [Validin](https://validin.com)
+- [VDOT Traffic Cams](https://www.arcgis.com/apps/dashboards/a0d3fb34cda44f5b8b10be1b245f24a3)
+- [Velociraptor Server](https://docs.velociraptor.app)
 - [Verisign](https://dnssec-debugger.verisignlabs.com)
 - [ViewDNS.info](https://viewdns.info)
 - [Virus Total](https://www.virustotal.com)
@@ -1531,6 +1568,8 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [Watcher](https://github.com/thalesgroup-cert/Watcher)
 - [Web-Check](https://web-check.as93.net)
 - [web-check.xyz](https://web-check.xyz)
+- [WEBCAM LIVE](https://www.whatsupcams.com/en)
+- [Webcamtaxi](https://www.webcamtaxi.com/en)
 - [WebMeUp](https://webmeup.com)
 - [Webscore](https://garvit835.github.io/WebScore)
 - [Webscout](https://webscout.io)
@@ -1552,12 +1591,13 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [whoisxmlapi.com](https://whoisxmlapi.com)
 - [Whoxy](https://www.whoxy.com)
 - [WiGLE](https://wigle.net)
+- [WorldCam](https://worldcam.eu)
 - [Wynyard Group](https://wynyardgroup.com)
+- [Xboxresolver.com](https://xboxresolver.com)
 - [Xing](https://www.xing.com)
 - [You Get Signal](https://www.yougetsignal.com)
 - [ZettelForge](https://github.com/ThreatRecall/zettelforge)
-
-<a id="code-repository-osint"></a>
+- [zoomeye](https://www.zoomeye.org)
 
 </details>
 
@@ -2097,13 +2137,11 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [ZOOM URL Generator](https://skyzh.github.io/zoom-url-generator)
 - [ZotPilot](https://github.com/xunhe730/ZotPilot)
 
-<a id="images-video-metadata"></a>
-
 </details>
 
 <a id="archives-evidence-preservation"></a>
 <details>
-<summary><strong>🗄️ Archives & Evidence Preservation</strong> · 38 links</summary>
+<summary><strong>🗄️ Archives & Evidence Preservation</strong> · 41 links</summary>
 
 - [A1 Website Download](https://www.microsystools.com/products/website-download)
 - [annas-archive](https://annas-archive.li)
@@ -2112,6 +2150,7 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [Archive.today](https://archive.ph)
 - [archived.moe](https://archived.moe)
 - [Berkeley Protocol](https://www.ohchr.org/en/publications/policy-and-methodological-publications/berkeley-protocol-digital-open-source)
+- [Binary Ninja](https://binary.ninja)
 - [BlackWidow](https://softbytelabs.com/wp/blackwidow)
 - [CachedView](https://cachedview.com)
 - [CashedPages](https://www.cachedpages.com)
@@ -2126,9 +2165,11 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [https://archive.org/details/1989-tbilisi-1202408](https://archive.org/details/1989-tbilisi-1_202408)
 - [https://web.archive.org/web//.ge](https://web.archive.org/web/*/*.ge)
 - [HTTrack](https://www.httrack.com)
+- [IDA Free](https://hex-rays.com/ida-free)
 - [Internet Archive](https://archive.org)
 - [Internet Archive](https://archive.org/web)
 - [IOA](https://www.io-archive.org)
+- [KAPE](https://www.kroll.com/kape)
 - [Mailing List Archives Search Engine](https://cse.google.com/cse/publicurl?cx=013991603413798772546:sipriovnbxq)
 - [Offliberty](https://offliberty.com)
 - [RECAP Archive](https://www.courtlistener.com/recap)
@@ -2144,8 +2185,6 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 - [Website Ripper Copier](https://www.tensons.com/products/websiterippercopier)
 - [WITNESS](https://www.witness.org)
 
-<a id="environmental-osint"></a>
-
 </details>
 
 ---
@@ -2153,7 +2192,7 @@ Internet infrastructure, domains, IPs, code repositories and preserved web evide
 <a id="media-geoint-physical-world"></a>
 ## 🗺️ Media, GEOINT & Physical World
 
-Images, video, metadata, maps, satellite, aviation, maritime, space and environment.
+Images, video, metadata, maps, satellite, transport and environment.
 
 <a id="images-video-metadata"></a>
 <details>
@@ -2334,8 +2373,6 @@ Images, video, metadata, maps, satellite, aviation, maritime, space and environm
 - [YouTube Thumbnail Grabber](https://www.youtube-thumbnail.com)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [Zapmeta](https://www.zapmeta.com)
-
-<a id="geoint-maps-satellite"></a>
 
 </details>
 
@@ -2649,8 +2686,6 @@ Images, video, metadata, maps, satellite, aviation, maritime, space and environm
 - [Zoom Earth](https://zoom.earth)
 - [Zscaler Global Threat Map Dashboard](https://threatlabz.zscaler.com/cloud-insights/threat-map-dashboard)
 
-<a id="transport-maritime-space"></a>
-
 </details>
 
 <a id="transport-maritime-space"></a>
@@ -2692,8 +2727,6 @@ Images, video, metadata, maps, satellite, aviation, maritime, space and environm
 - [VINCheck.info](https://vincheck.info)
 - [Voidly Censorship Index](https://voidly.ai/censorship-index)
 
-<a id="companies-finance-blockchain"></a>
-
 </details>
 
 <a id="environmental-osint"></a>
@@ -2704,16 +2737,14 @@ Images, video, metadata, maps, satellite, aviation, maritime, space and environm
 - [Firefox Focus](https://www.mozilla.org/en-US/firefox/browsers/mobile/focus)
 - [Lake County Fire Cameras](https://www.arcgis.com/apps/webappviewer/index.html?id=0f7aa08cc4b74fc6a0c4308d4eace6b3)
 
-<a id="ai-agents-mcp"></a>
-
 </details>
 
 ---
 
-<a id="organizations-records-research"></a>
-## 🏛️ Organizations, Records & Research
+<a id="organizations-records-data"></a>
+## 🏛️ Organizations, Records & Data
 
-Companies, finance, public records, regional sources, documents and academic research.
+Companies, finance, public records, regional sources, datasets and formal research.
 
 <a id="companies-finance-blockchain"></a>
 <details>
@@ -2879,13 +2910,11 @@ Companies, finance, public records, regional sources, documents and academic res
 - [YouControl](https://youcontrol.com.ua/en)
 - [ZoomInfo](https://www.zoominfo.com)
 
-<a id="public-records-government"></a>
-
 </details>
 
 <a id="public-records-government"></a>
 <details>
-<summary><strong>🏛️ Public Records & Government</strong> · 120 links</summary>
+<summary><strong>🏛️ Public Records & Government</strong> · 206 links</summary>
 
 - [AL Local Surety Association Directory](https://c0gaf106.caspio.com/dp/2d4e1000c7506b7686a540d3b10f)
 - [AR College University 2017 Salaries](https://b2.caspio.com/dp.asp?AppKey=883210005c5e51279b424364aab2)
@@ -2895,6 +2924,8 @@ Companies, finance, public records, regional sources, documents and academic res
 - [Canadian Legal Information Institute](https://www.canlii.org/en)
 - [Cancelthesefunerals.com](http://cancelthesefunerals.com)
 - [Cemetery.directory](https://cemetery.directory)
+- [Citizens Police Data Project](https://beta.cpdp.co)
+- [Civilian Office of Police Accountability](https://www.chicagocopa.org/data-cases/case-portal)
 - [COP26 registered attendees](https://datawrapper.dwcdn.net/UCUWs/3)
 - [Coronavirus Bailouts](https://projects.propublica.org/coronavirus/bailouts)
 - [CourtListener](https://www.courtlistener.com)
@@ -2904,11 +2935,15 @@ Companies, finance, public records, regional sources, documents and academic res
 - [data.occrp.org](https://data.occrp.org)
 - [Dauphin County PA 2017 Compensation](https://b2.caspio.com/dp/0a921000a2f20d556db84221a92c)
 - [Dutchess and Ulster bridge safety ratings 2015](https://b2.caspio.com/dp.asp?AppKey=996f1000109b0cd3b24b408daf60)
+- [EFF Atlas of Surveillance](https://atlasofsurveillance.org)
+- [Explore Canada’s Real Estate Market](https://www.remax.ca/find-real-estate)
 - [FAFSA Search and Report](https://c0dcb948.caspio.com/dp/726780004ccd83a96316450caead)
 - [FamilySearch’s United States Record Collections](https://stevemorse.org/fhl/websitesunitedstates.html)
 - [faxvin.com](https://faxvin.com)
+- [FederalCorporation](https://federalcorporation.ca)
 - [FederalRegister.gov](https://www.federalregister.gov)
 - [First Philadelphia Preparatory Charter School Staff Public Release 2017](https://b2.caspio.com/dp/0a921000842668d3d3e644d2bd8f)
+- [Florida Residents Directory](https://www.floridaresidentsdirectory.com)
 - [foia.gov](https://foia.gov)
 - [FollowTheMoney](https://www.followthemoney.org)
 - [German Gov Employee Database (Unknown)](https://c0acz339.caspio.com/dp/E171600054612b9f79fb4ddf8f2b)
@@ -2920,8 +2955,25 @@ Companies, finance, public records, regional sources, documents and academic res
 - [Greater Sacramento Area Public Salaries](https://b2.caspio.com/dp/c48210000605c38aa22f4080a1be)
 - [HEALTHCARE EDUCATION PROVIDERS](https://c3dug085.caspio.com/dp/1fec4000740ace75fdb94ec5bca5)
 - [High schools that received NRA grants 2010-2016](https://b4.caspio.com/dp/55073000c492127ebd8d4a03a06a)
+- [https://acb.gov.ge](https://acb.gov.ge)
+- [https://agruni.edu.ge](https://agruni.edu.ge)
+- [https://auto.ss.ge](https://auto.ss.ge)
+- [https://autopapa.ge](https://autopapa.ge)
+- [https://boost.worldbank.org](https://boost.worldbank.org)
+- [https://btu.edu.ge](https://btu.edu.ge)
+- [https://budget.ge](https://budget.ge)
+- [https://cesko.ge](https://cesko.ge)
+- [https://civil.ge](https://civil.ge)
+- [https://competition.ge](https://competition.ge)
 - [https://constcourt.ge](https://constcourt.ge)
 - [https://courtwatch.ge](https://courtwatch.ge)
+- [https://crrc.ge](https://crrc.ge)
+- [https://csb.gov.ge](https://csb.gov.ge)
+- [https://cu.edu.ge](https://cu.edu.ge)
+- [https://cv.ge](https://cv.ge)
+- [https://data.ipu.org/parliament/GE](https://data.ipu.org/parliament/GE)
+- [https://dea.gov.ge](https://dea.gov.ge)
+- [https://dis.gov.ge](https://dis.gov.ge)
 - [https://eauction.ge](https://eauction.ge)
 - [https://ecd.court.ge](https://ecd.court.ge)
 - [https://ecd.court.ge/CurrentCase](https://ecd.court.ge/CurrentCase)
@@ -2929,16 +2981,49 @@ Companies, finance, public records, regional sources, documents and academic res
 - [https://ecd.court.ge/PublicNotification](https://ecd.court.ge/PublicNotification)
 - [https://economy.ge](https://economy.ge)
 - [https://ecourt.ge](https://ecourt.ge)
+- [https://elibrary.emis.ge](https://elibrary.emis.ge)
+- [https://emis.ge](https://emis.ge)
+- [https://enreg.reestri.gov.ge](https://enreg.reestri.gov.ge)
+- [https://eqe.ge](https://eqe.ge)
+- [https://evercar.ge](https://evercar.ge)
+- [https://freeuni.edu.ge](https://freeuni.edu.ge)
+- [https://gavel.ge](https://gavel.ge)
 - [https://gba.ge](https://gba.ge)
 - [https://gov.ge](https://gov.ge)
+- [https://gtu.ge](https://gtu.ge)
 - [https://gyla.ge](https://gyla.ge)
+- [https://home.ge](https://home.ge)
+- [https://home.ss.ge](https://home.ss.ge)
+- [https://hr.ge](https://hr.ge)
+- [https://hra.gov.ge](https://hra.gov.ge)
+- [https://iliauni.edu.ge](https://iliauni.edu.ge)
+- [https://insurance.gov.ge](https://insurance.gov.ge)
+- [https://isfed.ge](https://isfed.ge)
+- [https://jobs.ge](https://jobs.ge)
 - [https://justice.gov.ge](https://justice.gov.ge)
+- [https://korter.ge](https://korter.ge)
+- [https://livo.ge](https://livo.ge)
+- [https://matsne.gov.ge](https://matsne.gov.ge)
+- [https://mes.gov.ge](https://mes.gov.ge)
 - [https://mfa.gov.ge](https://mfa.gov.ge)
 - [https://mof.gov.ge](https://mof.gov.ge)
+- [https://moh.gov.ge](https://moh.gov.ge)
 - [https://mrdi.gov.ge](https://mrdi.gov.ge)
 - [https://my.gov.ge](https://my.gov.ge)
+- [https://myauto.ge](https://myauto.ge)
+- [https://myauto.ge/en/vin](https://myauto.ge/en/vin)
+- [https://myhome.ge](https://myhome.ge)
+- [https://myjobs.ge](https://myjobs.ge)
+- [https://myparts.ge](https://myparts.ge)
+- [https://naec.ge](https://naec.ge)
+- [https://napr.gov.ge](https://napr.gov.ge)
 - [https://napr.gov.ge/en/service/information-services/extract-public-register](https://napr.gov.ge/en/service/information-services/extract-public-register)
+- [https://napr.gov.ge/en/service/registers](https://napr.gov.ge/en/service/registers)
 - [https://nbe.gov.ge](https://nbe.gov.ge)
+- [https://ncdc.ge](https://ncdc.ge)
+- [https://nea.gov.ge](https://nea.gov.ge)
+- [https://nfa.gov.ge](https://nfa.gov.ge)
+- [https://nsdi.gov.ge](https://nsdi.gov.ge)
 - [https://odapi.spa.ge](https://odapi.spa.ge)
 - [https://ombudsman.ge](https://ombudsman.ge)
 - [https://parliament.ge](https://parliament.ge)
@@ -2947,8 +3032,21 @@ Companies, finance, public records, regional sources, documents and academic res
 - [https://president.gov.ge](https://president.gov.ge)
 - [https://probation.moj.gov.ge](https://probation.moj.gov.ge)
 - [https://procurement.gov.ge](https://procurement.gov.ge)
+- [https://rs.ge](https://rs.ge)
+- [https://rs.ge/Eservices-en](https://rs.ge/Eservices-en)
+- [https://rs.ge/TaxPayer-en](https://rs.ge/TaxPayer-en)
+- [https://sao.ge](https://sao.ge)
+- [https://sda.gov.ge](https://sda.gov.ge)
+- [https://skolebi.emis.ge](https://skolebi.emis.ge)
+- [https://ssa.gov.ge](https://ssa.gov.ge)
+- [https://students.emis.ge](https://students.emis.ge)
 - [https://supremecourt.ge](https://supremecourt.ge)
+- [https://tbilisihome.ge](https://tbilisihome.ge)
 - [https://tenders.procurement.gov.ge](https://tenders.procurement.gov.ge)
+- [https://transparency.ge](https://transparency.ge)
+- [https://tsu.ge](https://tsu.ge)
+- [https://ug.edu.ge](https://ug.edu.ge)
+- [https://wine.gov.ge](https://wine.gov.ge)
 - [Illinois Public Salaries](https://c0ctb111.caspio.com/dp/1a7210001e4dbabdb7204962bc03)
 - [Independent fundamental Baptist sexual misconduct database](https://datawrapper.dwcdn.net/UyECh/20)
 - [IUS The Horizon Search and Report](https://c0acy802.caspio.com/dp/cf3b6000f61f1e0724984cb28f5c)
@@ -2961,6 +3059,7 @@ Companies, finance, public records, regional sources, documents and academic res
 - [LittleSis](https://littlesis.org)
 - [Lou Barletta 2017 Donors](https://b2.caspio.com/dp/0a9210001cdd2eaac90941488478)
 - [MA Middlesex County City employee salary 2019](https://c0eib112.caspio.com/dp/6ee01000497ba7e2d63b46229a99)
+- [Michigan Resident Database](https://www.michiganresidentdatabase.com)
 - [Michigan State Records](https://michigan.staterecords.org)
 - [Milwaukee Wisconsin City Employee Salaries 2019](https://c0ebl104.caspio.com/dp/eab010008ed5ca97d7404269bf89)
 - [Mobile AL Salaries Search and Report](https://b2.caspio.com/dp/362210004ae292fb5cf34f0fb079)
@@ -2972,22 +3071,33 @@ Companies, finance, public records, regional sources, documents and academic res
 - [nicb.org/vincheck](https://www.nicb.org/vincheck)
 - [NJParcels.com](http://njparcels.com/property)
 - [Nonprofit Explorer](https://projects.propublica.org/nonprofits)
+- [North Carolina Resident Database](https://northcarolinaresidentdatabase.com)
 - [Nursing Home Inspect](https://projects.propublica.org/nursing-homes)
 - [Offender Tracking Information System (OTIS)](https://mdocweb.state.mi.us/OTIS2/otis2.aspx)
 - [OH Court Costs](https://b2.caspio.com/dp/95d31000da9841d5980644c98761)
 - [OH marijuana docs](https://c0eru132.caspio.com/dp/95d310003d6c2e38182a48ef9bb2)
 - [Ohio obituaries, death & marriage Search](https://c0abe732.caspio.com/dp/679e5000cbc8c6a587bb42efa9ef)
+- [Ohio Resident Database](https://www.ohioresidentdatabase.com)
+- [Openoversight](https://openoversight.com)
 - [Openpayrolls.com](https://openpayrolls.com)
 - [OpenSecrets](https://www.opensecrets.org)
+- [Oregon DPSST Professional Standards Cases Database](https://www.oregon.gov/dpsst/CJ/Pages/Cases.aspx)
 - [PA Perry County 2017 Compensation Search and Report](https://b2.caspio.com/dp/0a921000e05cf4b592b245aeae20)
 - [PA School Districts Deeds user-facing web search](https://b2.caspio.com/dp/0a92100000938817df46468fa2a0)
 - [PA teacher salary average](https://b2.caspio.com/dp/0a921000a059622d4771466aab79)
 - [Parallelsearch case law](https://parallelsearch.casetext.com)
+- [Policecrime.bgsu.edu](https://policecrime.bgsu.edu)
 - [Public Access to Court Electronic Records](https://pacer.uscourts.gov)
+- [Realtor](https://www.realtor.com)
+- [Rechercher par entreprise](https://www.pes.rbq.gouv.qc.ca/RegistreLicences/Recherche?mode=Entreprise)
 - [Regulations.gov](https://www.regulations.gov)
+- [rehold](https://rehold.com)
+- [RJSC Connect](https://rjsc.novascotia.ca)
 - [Scotussearch.com](https://www.scotussearch.com)
 - [SECO Verification of Course Attendance 2018](https://c0esh132.caspio.com/dp/9040200005c29c35a74342e2b357)
+- [Secret Surveillance Catalogue](https://theintercept.com/surveillance-catalogue)
 - [SeeThroughNY :: Pensions](https://www.seethroughny.net/pensions)
+- [Services en ligne](https://www.pes.ctq.gouv.qc.ca/pes/faces/dossierclient/recherche.jsp)
 - [Social Security Death Index](https://stevemorse.org/ssdi/ssdi.html)
 - [Social Security Death Master File](https://ssdmf.info)
 - [Sortedbybirthdate](https://sortedbybirthdate.com)
@@ -2996,6 +3106,8 @@ Companies, finance, public records, regional sources, documents and academic res
 - [Supreme Court of Canada - Cases](https://www.scc-csc.ca/case-dossier/index-eng.aspx)
 - [Texas Local Superintendent Salaries Search and Report](https://b3.caspio.com/dp/5a5b1000b41b35162a3844b4b7ec)
 - [Texas Public Records Search](https://publicrecords.searchsystems.net/United_States_Free_Public_Records_by_State/Texas_Public_Records)
+- [TGCG Members Page](https://c2ffn114.caspio.com/dp/e6a74000833e44e23c324a10987c)
+- [The NYPD Files](https://projects.propublica.org/nypd-ccrb)
 - [The Pegasus Project | OCCRP](https://cdn.occrp.org/projects/project-p/#)
 - [UKY Salaries 2019](https://c0ect130.caspio.com/dp/c8521000eca729c2125e46c487fd)
 - [UNC System employees with the biggest paychecks](https://c0dzk127.caspio.com/dp/b95b1000e0821c125a8a43cd9cc1)
@@ -3003,12 +3115,13 @@ Companies, finance, public records, regional sources, documents and academic res
 - [whoownswhat.justfix.org](https://whoownswhat.justfix.org/en)
 - [Wisconsin Fox River Veterans’ Grave Registration Database](https://c3cqk813.caspio.com/dp/b201500011643c5f4c7f4bfba7d1)
 - [Worcester MA Employee Gross Pay](https://c0acu481.caspio.com/dp/e0536000108787410ed749fdb240)
+- [XBRL Voluntary Filing Program](https://www.sedar.com/issuers/issuers_en.htm)
 - [York City PA Compensation](https://b2.caspio.com/dp/0a92100001903125816c4d34a37a)
 - [York County PA 2017 Write in Report](https://b2.caspio.com/dp/0a9210000bece9f2f50642ff9cac)
 - [York County VA 2017 Public Salaries](https://b2.caspio.com/dp/0a921000b12e238357df42e7affc)
+- [Zillow](https://www.zillow.com)
 - [zillow.com](https://zillow.com)
-
-<a id="news-media-monitoring"></a>
+- [Zoopla](https://www.zoopla.co.uk)
 
 </details>
 
@@ -3051,8 +3164,6 @@ Companies, finance, public records, regional sources, documents and academic res
 - [Walla (Israel)](https://www.walla.co.il)
 - [Yandex (Russia)](https://www.yandex.com)
 - [Zarebin (Iran)](https://zarebin.ir)
-
-<a id="lists-training-reference"></a>
 
 </details>
 
@@ -3158,7 +3269,468 @@ Companies, finance, public records, regional sources, documents and academic res
 - [YouLearn](https://www.youlearn.ai)
 - [Zetoc](https://zetoc.jisc.ac.uk)
 
-<a id="archives-evidence-preservation"></a>
+</details>
+
+<a id="data-statistics-open-data"></a>
+<details>
+<summary><strong>📊 Data, Statistics & Open Data</strong> · 58 links</summary>
+
+- [AGOA Data Center](https://agoa.info)
+- [AWS Public Datasets](https://aws.amazon.com/datasets)
+- [Bank for International Settlements Statistics](https://www.bis.org/statistics/index.htm)
+- [Berkely Library: Data Lab](https://www.lib.berkeley.edu/libraries/data-lab)
+- [BigQuery public datasets](https://cloud.google.com/bigquery/public-data)
+- [CEPII](https://www.cepii.fr/CEPII/en/welcome.asp)
+- [Data.gov](https://www.data.gov)
+- [Data.gov.uk](https://data.gov.uk)
+- [data.world](https://data.world)
+- [DBPedia](https://wiki.dbpedia.org)
+- [European Union Open Data Portal](https://open-data.europa.eu/en/data)
+- [Eurostat](https://ec.europa.eu/eurostat)
+- [Freebase](https://developers.google.com/freebase)
+- [Gapminder World](https://www.gapminder.org/data)
+- [Google Public Data Explorer](https://www.google.com/publicdata/directory)
+- [HIS Piers](https://www.ihs.com/products/piers.html)
+- [https://data.gov.ge](https://data.gov.ge)
+- [https://opendata.spa.ge](https://opendata.spa.ge)
+- [https://opensanctions.org/datasets/gedeclarations/](https://opensanctions.org/datasets/ge_declarations)
+- [Human Development Reports](https://hdr.undp.org/en/global-reports)
+- [ILOSTAT](https://www.ilo.org/ilostat/faces/oracle/webcenter/portalapp/pagehierarchy/Page137.jspx?_afrLoop=443508925711569&clean=true#%40%3F_afrLoop%3D443508925711569%26clean%3Dtrue%26_adf.ctrl-state%3Dl4dwldaf3_9)
+- [IMF World Economic Outlook Database](https://www.imf.org/external/ns/cs.aspx?id=28)
+- [Index Mundi](https://www.indexmundi.com)
+- [International Energy Agency Statistics](https://www.iea.org/statistics)
+- [Internet Census 2012](http://census2012.sourceforge.net/paper.html)
+- [Junar](https://junar.com)
+- [LandMatrix](https://landmatrix.org)
+- [Latinobarometro](https://www.latinobarometro.org)
+- [Library, University of Michigan: Statistics and Datasets](https://www.lib.umich.edu/browse/Statistics%20and%20Data%20Sets)
+- [Nation Master](https://www.nationmaster.com/statistics)
+- [OECD Data](https://data.oecd.org)
+- [Open Data Policing](https://opendatapolicing.com)
+- [Opensanctions.org](https://opensanctions.org)
+- [Population Reference Bureau Data Finder](https://www.prb.org/DataFinder.aspx)
+- [PRS Risk Indicators](https://www.prsgroup.com)
+- [SESRIC Basic Social and Economic Indicators](https://www.sesric.org/baseind.php)
+- [SESRIC Databases](https://www.sesric.org/databases-index.php)
+- [Statista](https://www.statista.com)
+- [The Atlas of Economic Complexity](https://atlas.cid.harvard.edu)
+- [The Data and Story Library](https://lib.stat.cmu.edu/DASL)
+- [Trading Economics](https://www.tradingeconomics.com)
+- [Transparency.org Corruption Perception Index](https://www.transparency.org/cpi2015)
+- [UAV Radar](https://uavradar.live)
+- [UN COMTRADE Database](https://comtrade.un.org)
+- [UN Data](https://data.un.org)
+- [UNCTAD STAT](https://unctadstat.unctad.org)
+- [UNDPs Human Development Index](https://hdr.undp.org/en/data)
+- [UNECE](https://w3.unece.org/PXWeb/en)
+- [UNESCO Institute for Statistics](https://uis.unesco.org)
+- [US Data and Statistics](https://www.usa.gov/statistics)
+- [Vizala](https://vizala.com)
+- [WHO Data](https://www.who.int/gho/en)
+- [World Bank Data](https://data.worldbank.org)
+- [World Bank Data](https://datatopics.worldbank.org/consumption/home)
+- [World Bank Enterprise Surveys](https://www.enterprisesurveys.org)
+- [World Bank Investing Across Borders](https://iab.worldbank.org)
+- [World Integrated Trade Solution](https://wits.worldbank.org)
+- [WTO Statistics](https://www.wto.org/english/res_e/statis_e/statis_e.htm)
+
+</details>
+
+---
+
+<a id="analyst-workspace-utilities"></a>
+## 🧩 Analyst Workspace & Utilities
+
+Supporting tools for privacy, browsing, visualization and everyday analyst productivity.
+
+<a id="privacy-opsec-browsers"></a>
+<details>
+<summary><strong>🛡️ Privacy, OPSEC & Browsers</strong> · 120 links</summary>
+
+- [10 Minute Tips](https://osintcurio.us/10-minute-tips)
+- [30 best OSINT extensions for Google Chrome – osintme.com](https://www.osintme.com/index.php/2021/06/30/30-best-osint-extensions-for-google-chrome)
+- [Abine](https://www.abine.com)
+- [AdGuard VPN](https://adguard-vpn.com/en/welcome.html)
+- [Adium](https://adium.im)
+- [AnonAddy](https://anonaddy.com)
+- [Atom](https://browser.ru)
+- [Bitwarden](https://bitwarden.com)
+- [bleachbit.org](https://bleachbit.org)
+- [Boolean Strings | Tools](https://booleanstrings.com/tools)
+- [Brave](https://brave.com)
+- [Brave Talk](https://talk.brave.com)
+- [Briar](https://briarproject.org)
+- [Bromite](https://www.bromite.org)
+- [Calls Node Status](https://www.broadcastify.com/calls/status)
+- [CCleaner](https://www.piriform.com/ccleaner)
+- [CentBrowser](https://www.centbrowser.com)
+- [Chatsecure](https://chatsecure.org)
+- [Choose your wallet](https://bitcoin.org/en/choose-your-wallet)
+- [Chrome](https://www.google.com/chrome)
+- [COMB](https://www.proxynova.com/tools/comb)
+- [Comodo Dragon](https://www.comodo.com/home/browsers-toolbars/browser.php)
+- [Consumer Reports Security Planner](https://securityplanner.consumerreports.org)
+- [Coowon](https://coowon.com)
+- [Cryptpad.fr](https://cryptpad.fr)
+- [DFIR Diva](https://dfirdiva.com/hooked-on-osint)
+- [Disconnect](https://disconnect.me)
+- [Do Not Track](https://donottrack.us)
+- [Edge](https://www.microsoft.com/en-us/windows/microsoft-edge/microsoft-edge)
+- [Element](https://element.io)
+- [EncSF MP](https://encfsmp.sourceforge.net)
+- [Epic Privacy Browser](https://www.epicbrowser.com)
+- [Eraser](https://eraser.heidi.ie)
+- [FileVault](https://support.apple.com/en-us/HT204837)
+- [Find open FTP Servers](https://www.aware-online.com/en/osint-tutorials/find-open-ftp-servers)
+- [Gnu Icecat](https://icecatbrowser.org)
+- [GNU PG](https://www.gnupg.org/download/index.html)
+- [GPG Tools](https://gpgtools.org)
+- [Guardian Project](https://guardianproject.info)
+- [hide.me VPN](https://hide.me/en)
+- [Hotspot Shield](https://www.hotspotshield.com)
+- [HTTPs Everywhere](https://www.eff.org/https-everywhere)
+- [I2P](https://geti2p.net)
+- [I2P](https://geti2p.net/en/download)
+- [Jake Creps](https://jakecreps.com)
+- [Jami.net](https://jami.net)
+- [Jitsi Meet](https://meet.jit.si)
+- [justdeleteme](https://justdelete.me)
+- [KeePass Password Safe](https://keepass.info)
+- [keepassxc.org](https://keepassxc.org)
+- [Lastpass](https://lastpass.com)
+- [LibreWolf](https://librewolf.net)
+- [Lockbin](https://lockbin.com)
+- [Master Password](https://masterpasswordapp.com)
+- [Matweb.info](https://matweb.info)
+- [Maxthon](https://www.maxthon.com)
+- [Metacleaner.com](https://metacleaner.com)
+- [Mullvad Browser](https://mullvad.net/en/browser)
+- [mullvad.net](https://mullvad.net)
+- [Nixory](https://nixory.sourceforge.net)
+- [NoScript](https://noscript.net)
+- [OffShore.cat](https://offshore.cat/?page=vpn)
+- [onionshare.org](https://onionshare.org)
+- [Opera](https://www.opera.com)
+- [OSINT Is A State Of Mind](https://medium.com/secjuice/osint-as-a-mindset-7d42ad72113d)
+- [OSINT Techniques](https://www.osinttechniques.com)
+- [OSINT.SH](https://osint.sh)
+- [Osint.support](https://osint.support)
+- [Osint.team](https://osint.team)
+- [osintme.com](https://www.osintme.com)
+- [Panopticlick](https://panopticlick.eff.org)
+- [Pidgin](https://www.pidgin.im)
+- [PRISM Break](https://prism-break.org/en)
+- [Privacy.com](https://privacy.com)
+- [Privazer](https://privazer.com)
+- [proton.me](https://proton.me)
+- [ProtonVPN](https://protonvpn.com)
+- [Psiphon](https://www.psiphon.ca)
+- [Qubes](https://www.qubes-os.org)
+- [reKnowledge](https://www.reknowledge.tech)
+- [Rocket.Chat](https://rocket.chat)
+- [Safari](https://www.apple.com/safari)
+- [Securesha](https://securesha.re)
+- [Security First - Umbrella](https://secfirst.org/umbrella)
+- [Security in a Box](https://securityinabox.org/en)
+- [Signal](https://signal.org)
+- [Silent circle](https://www.silentcircle.com)
+- [Sleipnir](https://www.fenrir-inc.com/jp/sleipnir)
+- [Slimjet](https://www.slimjet.com)
+- [Snort](https://www.snort.org)
+- [Speech Jammer](https://mynoise.net/NoiseMachines/audioJammerNoiseGenerator.php)
+- [Spideroak](https://spideroak.com)
+- [SRWare Iron](https://www.srware.net/en/software_srware_iron.php)
+- [START CARING STOP SHARING](https://medium.com/@Dutchosintguy/start-caring-stop-sharing-9c108d957b2c)
+- [Stutterbox](https://www.stutterbox.co.uk)
+- [Surveilliance Self Defense](https://ssd.eff.org)
+- [syncthing.net](https://syncthing.net)
+- [Technisette](https://www.technisette.com/p/home)
+- [The OSINT Vault](https://theosintvault.io)
+- [The Tor Project](https://www.torproject.org/download)
+- [The Ultimate OSINT Collection](https://start.me/p/DPYPMz/the-ultimate-osint-collection)
+- [Thunderbird](https://www.thunderbird.net/en-US)
+- [TI](https://start.me/p/rxRbpo/ti)
+- [Tor Browser](https://www.torproject.org/projects/torbrowser.html.en)
+- [Tor Project](https://www.torproject.org)
+- [Torch](https://www.torchbrowser.com)
+- [torproject.org](https://torproject.org)
+- [Tracking Digital Footprints](https://spotlight.ebu.ch/p/tracking-digital-footprints-with)
+- [Trouble Fake](https://start.me/p/QRQb0O/trouble-fake)
+- [UCBrowser](https://www.ucweb.com)
+- [veracrypt.fr](https://veracrypt.fr)
+- [Vivaldi](https://vivaldi.com)
+- [VPN Comparison by That One Privacy Guy](https://thatoneprivacysite.net)
+- [Waterfox](https://www.waterfox.net)
+- [Webint Master](https://webintmaster.com)
+- [Week in OSINT](https://sector035.nl/articles/category:week-in-osint)
+- [whonix.org](https://whonix.org)
+- [Wickr](https://wickr.com)
+- [Wire](https://wire.com/en)
+- [WOT](https://www.mywot.com)
+
+</details>
+
+<a id="visualization-graphs-timelines"></a>
+<details>
+<summary><strong>📈 Visualization, Graphs & Timelines</strong> · 64 links</summary>
+
+- [Aeon](https://www.aeontimeline.com)
+- [Arbor.js](https://arborjs.org)
+- [Arizona LE Database - ABC15](https://datawrapper.dwcdn.net/kkg90/6)
+- [Befunky](https://www.befunky.com)
+- [Bizint](https://www.bizint.com)
+- [Cacoo](https://cacoo.com)
+- [Canva](https://www.canva.com)
+- [Chart.js](https://www.chartjs.org)
+- [chartblocks](https://www.chartblocks.com)
+- [Chicago Police Department Demographics](https://public.flourish.studio/visualisation/1089756)
+- [Circos](https://circos.ca)
+- [creately](https://creately.com)
+- [D3js](https://d3js.org)
+- [Data Visualization Catalogue](https://datavizcatalogue.com)
+- [Datawrapper](https://datawrapper.de)
+- [Dropmark](https://www.dropmark.com)
+- [dygraphs](https://dygraphs.com)
+- [easely](https://www.easel.ly)
+- [Exhibit](https://www.simile-widgets.org/exhibit)
+- [Flot](https://www.flotcharts.org)
+- [FusionCharts](https://www.fusioncharts.com)
+- [Google Developers: Charts](https://developers.google.com/chart)
+- [GraphX](https://spark.apache.org/graphx)
+- [Highcharts](https://www.highcharts.com)
+- [Hohli](https://charts.hohli.com)
+- [How many untested r@pe kits does your city police department or county sheriff’s office have?](https://datawrapper.dwcdn.net/uOdaT/4)
+- [Infogr.am](https://infogr.am)
+- [Inkscape](https://inkscape.org)
+- [Iowa Cities police budgets](https://public.flourish.studio/visualisation/3168834)
+- [JpGraph](https://jpgraph.net)
+- [jqPlot](https://www.jqplot.com)
+- [Knoema](https://knoema.com)
+- [Linkuroius](https://linkurio.us)
+- [LocalFocus](https://www.localfocus.nl)
+- [Lucidchart](https://www.lucidchart.com)
+- [Nodebox](https://www.nodebox.net)
+- [Observable](https://observablehq.com)
+- [Palladio](https://hdlab.stanford.edu/palladio)
+- [Piktochart](https://piktochart.com)
+- [Pixxa](https://www.pixxa.com)
+- [Plotly](https://plot.ly)
+- [Preceden](https://www.preceden.com)
+- [QlikView](https://www.visualintelligence.co.nz/qlikview)
+- [Quadrigram](https://www.quadrigram.com)
+- [RAW](https://raw.densitydesign.org)
+- [Snappa](https://snappa.io)
+- [Steganography Online Codec](https://www.pelock.com/products/steganography-online-codec)
+- [Tableau](https://www.tableau.com)
+- [Tableau Public](https://public.tableau.com)
+- [Tagul](https://tagul.com)
+- [The Philadelphia Police Misconduct Database](https://datawrapper.dwcdn.net/3GbVI/1)
+- [Tiki-toki](https://www.tiki-toki.com)
+- [Timeline](https://timeline.knightlab.com)
+- [Timeline](https://www.simile-widgets.org/timeline)
+- [Timetoast](https://www.timetoast.com)
+- [UNStats Social Indicators](https://unstats.un.org/unsd/demographic/products/socind)
+- [Venngage](https://venngage.com)
+- [Vis.js](https://visjs.org)
+- [Visme](https://www.visme.co)
+- [Visualize Free](https://visualizefree.com)
+- [Visualize.me](https://vizualize.me)
+- [visually](https://create.visual.ly)
+- [Vortex](https://www.dotmatics.com/products/vortex)
+- [ZingChart](https://www.zingchart.com)
+
+</details>
+
+<a id="productivity-analyst-utilities"></a>
+<details>
+<summary><strong>🧩 Productivity & Analyst Utilities</strong> · 186 links</summary>
+
+- [~~Framadrop~~](https://framadrop.org/en)
+- [2Chat](https://2chat.co/tools/whatsapp-checker)
+- [30Tools](https://30tools.com)
+- [aadinternals](https://aadinternals.com/osint)
+- [Abuse.ch](https://abuse.ch)
+- [AccuWeather](https://www.accuweather.com)
+- [ANY.RUN](https://any.run)
+- [APT Groups and Operations](https://docs.google.com/spreadsheets/u/0/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/pubhtml)
+- [Argos OSINT](https://argos-osint.com)
+- [arXiv.org](https://arxiv.org)
+- [BackgroundChecks.com](https://www.backgroundchecks.com)
+- [Big Number Calculator](https://defuse.ca/big-number-calculator.htm)
+- [BigNox](https://www.bignox.com)
+- [Bin.disroot.org](https://bin.disroot.org)
+- [BinaryEdge](https://www.binaryedge.io)
+- [Bing Microsoft Translator](https://www.bing.com/translator)
+- [bioRxiv.org](https://www.biorxiv.org)
+- [Bitquery](https://bitquery.io)
+- [blackarch.org](https://blackarch.org)
+- [BlackHole](https://blackhole.run)
+- [Bluestacks](https://www.bluestacks.com)
+- [BOSINT](https://app.bosint.gg)
+- [Breadcrumbs](https://breadcrumbs.app)
+- [Bunker.is](https://bunker.is)
+- [CachedPages](http://www.cachedpages.com)
+- [Canary Tokens](http://canarytokens.org/generate)
+- [Chibisafe.moe](https://chibisafe.moe)
+- [CIRCL Hashlookup](https://www.circl.lu/services/hashlookup)
+- [Cisco Talos Intelligence Group](https://talosintelligence.com)
+- [Clearbit Connect](https://connect.clearbit.com)
+- [CodePen](https://codepen.io)
+- [Compiler Explorer](https://godbolt.org)
+- [Cryptee](https://crypt.ee)
+- [csilinux.com](https://csilinux.com)
+- [CSV to HTML](https://codepen.io/RYJASM/pen/LVEWgV)
+- [cymon](https://cymon.io)
+- [Dating Profile Generator](https://www.dating-profile-generator.org.uk)
+- [DBpedia](https://www.dbpedia.org)
+- [DeadDrop](https://deaddrop.theosintconsultants.com/dashboard)
+- [Decoding Social Security Numbers](https://stevemorse.org/ssn/ssn.html)
+- [Decompiler.com](http://www.decompiler.com)
+- [DeepL](https://www.deepl.com/translator)
+- [Dencode.com](https://dencode.com)
+- [Diceware Generator](https://www.rempe.us/diceware/#eff)
+- [digital-forensics.sans.org](https://digital-forensics.sans.org)
+- [Disasm.pro](https://disasm.pro)
+- [Dotspotter](https://www.forensicdots.de)
+- [dudle](https://dudle.inf.tu-dresden.de/anonymous)
+- [Dune Analytics](https://dune.com)
+- [Editor.typely.com](https://editor.typely.com)
+- [Encoding and Decoding Driver’s License Numbers](https://stevemorse.org/dl/dl.html)
+- [EtherCalc](https://ethercalc.net)
+- [Fake Drivers License Generator](https://fakeinfo.net/drivers-license-generator)
+- [Fake Generator Tools](https://fauxid.com/tools)
+- [Fake Name Generator](https://www.fakenamegenerator.com)
+- [Fake Youtube Channel Generator](https://fakeinfo.net/fake-youtube-channel-generator)
+- [FaviconHash](https://kriztalz.sh/favicon-hash)
+- [FeodoTracker](https://feodotracker.abuse.ch)
+- [Flickr](https://www.flickr.com)
+- [FortiGuard](http://www.fortiguard.com)
+- [Free Virtual Machine Software](https://www.vmware.com/ca/products/workstation-player/workstation-player-evaluation.html)
+- [FullContact](https://www.fullcontact.com)
+- [Genymotion](https://www.genymotion.com)
+- [Ghiro](https://www.getghiro.org)
+- [Google Translate](https://translate.google.com)
+- [Greynoise](https://greynoise.io)
+- [HTML editor](https://onlinehtmleditor.dev)
+- [HTML Sanitizer Tool](https://defuse.ca/html-sanitize.htm)
+- [https://mythdetector.com/en/factchecker-db/](https://mythdetector.com/en/factchecker-db)
+- [Hudson Rock](https://www.hudsonrock.com/free-tools)
+- [Hunchly](https://www.hunch.ly)
+- [Hunt](https://www.hunt.io)
+- [IBM X-Force Exchange](https://exchange.xforce.ibmcloud.com)
+- [IMEI Number Generator](https://dyrk.org/tools/imei)
+- [Imgur](https://imgur.com)
+- [Intelligence Security](https://intelligencesecurity.io)
+- [Intelligence X](https://intelx.io)
+- [International Name Generator](https://www.behindthename.com/random)
+- [IPA Translator](https://ipatranslator.com)
+- [it-tools](https://it-tools.tech)
+- [kali.org](https://kali.org)
+- [Kasm](https://kasmweb.com)
+- [Ldplayer.net](https://www.ldplayer.net)
+- [Libgen.fun](https://libgen.fun)
+- [LinkScope](https://accentusoft.com)
+- [Live demo](https://getprism.su)
+- [MalShare](https://malshare.com)
+- [Maltego](https://www.maltego.com)
+- [MEGA](https://mega.io)
+- [Memento Time Travel](https://timetravel.mementoweb.org)
+- [Memuplay.com](https://www.memuplay.com)
+- [MetaSleuth](https://metasleuth.io)
+- [MISP](https://www.misp-project.org)
+- [MISP Galaxy](https://www.misp-galaxy.org)
+- [MITRE ATT&CK](https://attack.mitre.org)
+- [Monitor database leaks](https://vigilante.pw)
+- [Multi Translate](https://translate.mix.pink)
+- [Netcraft Site Report](https://sitereport.netcraft.com)
+- [NINO Generator](https://www.fakenamegenerator.com/national-insurance-number.php)
+- [Obsidian](https://obsidian.md)
+- [ODA - The Online Disassembler](https://onlinedisassembler.com/odaweb)
+- [Oldweb.today](http://oldweb.today)
+- [Online Color Picker](https://colorpicker.me)
+- [Online Sequencer](https://onlinesequencer.net)
+- [Open Source Virtualization](https://www.virtualbox.org/wiki/Downloads)
+- [OpenPhish](https://openphish.com)
+- [OSINT Virtual Machine for Investigations](https://www.tracelabs.org/initiatives/osint-vm)
+- [osint-cli-tool-skeleton](https://pypi.org/project/osint-cli-tool-skeleton)
+- [OSINT-Tool](https://www.osint-tool.com)
+- [Outwit](https://www.outwit.com)
+- [Pad.riseup.net](https://pad.riseup.net)
+- [parrotsec.org](https://parrotsec.org)
+- [Passive Total](https://community.riskiq.com)
+- [Peekalink](https://www.peekalink.io)
+- [PGPKeyAnalyser](https://kriztalz.sh/pgp-key-analyser)
+- [PhishTank](https://phishtank.org)
+- [PIC/CIC Code Database](https://www.allredtech.com)
+- [PrimeOS](https://www.primeos.in)
+- [PrivateBin](https://privatebin.net)
+- [Project Gutenberg](https://www.gutenberg.org)
+- [Proofread Bot](https://proofreadbot.com)
+- [pywhat](https://pypi.org/project/pywhat)
+- [Quake](https://quake.360.net)
+- [qubes-os.org](https://qubes-os.org)
+- [QuickCode](https://quickcode.io)
+- [Random Face Generator](https://fakeinfo.net/random-face-generator)
+- [RandTap](https://randtap.com)
+- [redteam.to](https://redteam.to)
+- [remnux.org](https://remnux.org)
+- [Resume Generator](https://thisresumedoesnotexist.com)
+- [Revealer.cc](https://revealer.cc)
+- [Reverso](https://www.reverso.net/text_translation.aspx?lang=EN)
+- [Router Passwords](https://www.routerpasswords.com)
+- [ScamAdviser](https://www.scamadviser.com)
+- [Sci-hub](https://sci-hub.st)
+- [Send](https://send.actionsack.com)
+- [Shodan Monitor](https://monitor.shodan.io)
+- [ShowTheDocs](http://showthedocs.com)
+- [SIN Generator](https://www.fakenamegenerator.com/social-insurance-number.php)
+- [Sintelix](https://sintelix.com)
+- [SkyOSINT](https://skyosint.io)
+- [Spamhaus](https://www.spamhaus.org)
+- [SpiderFoot](https://www.spiderfoot.net)
+- [SpyCloud](https://spycloud.com)
+- [SQL Editor](https://www.mycompiler.io/new/sql)
+- [SQLable](https://sqlable.com)
+- [SSN Generator](https://www.fakenamegenerator.com/social-security-number.php)
+- [Telegago](https://cse.google.com/cse?cx=006368593537057042503:efxu7xprihg)
+- [Telemetr](https://telemetr.io)
+- [Text and File Hash Calculator](https://defuse.ca/checksums.htm)
+- [Text Machine](https://textmachine.org/en/text-tools/cipher-identifier)
+- [text to speech online](https://www.naturalreaders.com/online)
+- [The Hidden Wiki](https://thehiddenwiki.org)
+- [theHarvester](https://pypi.org/project/theHarvester)
+- [This Rental Does Not Exist](https://thisrentaldoesnotexist.com)
+- [Tor2web](https://www.tor2web.org)
+- [tracelabs.org](https://tracelabs.org)
+- [transfer.sh](https://transfer.sh)
+- [Translate](https://www.translatedict.com)
+- [Trantor.is](https://trantor.is)
+- [TRM Labs](https://www.trmlabs.com)
+- [TTSReader](https://ttsreader.com)
+- [Twiteur](https://twiteur.com)
+- [U-Find](https://u-find.com)
+- [Unpaywall](https://unpaywall.org/products/extension)
+- [Upload | Disroot](https://disroot.org/en/services/upload)
+- [URL Decoder/Encoder](https://meyerweb.com/eric/tools/dencoder)
+- [US SSN / Driver License / State ID / Passport / Tax ID Generator](https://www.elfqrin.com/usssndriverlicenseidgen.php)
+- [VIN Generator](https://www.fakenamegenerator.com/vehicle-identification-number.php)
+- [VMRay Analyzer](https://www.vmray.com)
+- [WalletExplorer](https://walletexplorer.com)
+- [WayBien](https://waybien.com)
+- [Wetranscriber](https://www.wetranscriber.com)
+- [Whatsapp CheckLeaked](https://whatsapp.checkleaked.cc)
+- [WhatsApp Link Generator](https://create.wa.link)
+- [Wifispc.com](https://wifispc.com)
+- [Wikidata](https://www.wikidata.org)
+- [Wikipedia](https://en.wikipedia.org)
+- [Wiman](https://www.wiman.me)
+- [World Temperatures — Weather Around The World](https://www.timeanddate.com/weather)
+- [WorldLicensePlates](http://www.worldlicenseplates.com)
+- [x86 and x64 Intel Assembler](https://defuse.ca/online-x86-assembler.htm)
+- [Yandex.Translate](https://translate.yandex.com)
+- [Yumpu](https://www.yumpu.com)
+- [ZeroBounce](https://www.zerobounce.net)
+- [Zz.fo](https://zz.fo)
 
 </details>
 
@@ -3167,7 +3739,7 @@ Companies, finance, public records, regional sources, documents and academic res
 <a id="monitoring-ai-automation"></a>
 ## ⚙️ Monitoring, AI & Automation
 
-News monitoring, agentic tools, AI assistance and investigation frameworks.
+Monitoring, APIs, AI assistance and investigation frameworks.
 
 <a id="news-media-monitoring"></a>
 <details>
@@ -3326,8 +3898,6 @@ News monitoring, agentic tools, AI assistance and investigation frameworks.
 - [Yahoo Groups](https://groups.yahoo.com)
 - [Yahoo News](https://news.yahoo.com)
 
-<a id="documents-academic-research"></a>
-
 </details>
 
 <a id="ai-agents-mcp"></a>
@@ -3447,7 +4017,27 @@ News monitoring, agentic tools, AI assistance and investigation frameworks.
 - [ZoomEye](https://www.zoomeye.ai)
 - [Ответы](https://otvet.mail.ru)
 
-<a id="frameworks-automation"></a>
+</details>
+
+<a id="osint-apis-developer-tools"></a>
+<details>
+<summary><strong>🔌 OSINT APIs & Developer Tools</strong> · 15 links</summary>
+
+- [abuseipdb.com/api](https://www.abuseipdb.com/api)
+- [criminalip.io/developer](https://www.criminalip.io/developer)
+- [dehashed.com/docs](https://dehashed.com/docs)
+- [developer.shodan.io](https://developer.shodan.io)
+- [developers.virustotal.com](https://developers.virustotal.com)
+- [haveibeenpwned.com/API](https://haveibeenpwned.com/API)
+- [hunter.io/api](https://hunter.io/api)
+- [Insomnia](https://insomnia.rest)
+- [ipinfo.io/developers](https://ipinfo.io/developers)
+- [Mozilla HTTP Observatory](https://developer.mozilla.org/en-US/observatory)
+- [OWASP API Security Top 10](https://owasp.org/www-project-api-security)
+- [Postman](https://www.postman.com)
+- [SerpApi](https://serpapi.com)
+- [Snusbase API](https://snusbase.com/api)
+- [urlscan.io/docs/api](https://urlscan.io/docs/api)
 
 </details>
 
@@ -3484,798 +4074,150 @@ News monitoring, agentic tools, AI assistance and investigation frameworks.
 - [TOOLKIT](https://start.me/p/W1AXYo/toolkit)
 - [Website Fingerprinting and Site Data](https://www.netcraft.com)
 
-<a id="brazil-regional"></a>
-
 </details>
 
 ---
 
-<a id="miscellaneous"></a>
-## 🧰 Miscellaneous
+<a id="community-miscellaneous"></a>
+## 🧰 Community & Miscellaneous
 
-Useful OSINT resources that do not fit cleanly into one box.
+OSINT organizations, blogs, communities and resources that resist tidy categorization.
+
+<a id="osint-organizations-blogs-communities"></a>
+<details>
+<summary><strong>🌍 OSINT Organizations, Blogs & Communities</strong> · 21 links</summary>
+
+- [C4ADS](https://c4ads.org)
+- [CITEAM](https://citeam.org)
+- [Conflict Observatory](https://hub.conflictobservatory.org)
+- [Face Detection and comparison](https://6mzld2.csb.app)
+- [GreyNoise Intelligence](https://www.greynoise.io/viz)
+- [https://icij.org](https://icij.org)
+- [https://occrp.org](https://occrp.org)
+- [immuniweb.com/websec](https://www.immuniweb.com/websec)
+- [Lampyre](https://lampyre.io)
+- [Open-source intelligence (OSINT)](https://en.wikipedia.org/wiki/Open-source_intelligence)
+- [Open-source intelligence for breaches](https://scylla.sh)
+- [os-surveillance](https://os-surveillance.io)
+- [pentest-tools.com](https://pentest-tools.com)
+- [Prospeo](https://prospeo.io)
+- [RepoAnalyzer](https://repoanalyzer.site)
+- [Reverse Contact](https://www.reversecontact.com)
+- [SimpleLogin](https://simplelogin.io)
+- [t.me/OSINTgroup](https://t.me/OSINT_group)
+- [t.me/overbafer1](https://t.me/overbafer1)
+- [t.me/Socialengineering](https://t.me/Social_engineering)
+- [Technology Lookup](https://osint.sh/stack)
+
+</details>
 
 <a id="other-osint-resources"></a>
 <details>
-<summary><strong>🧰 Other OSINT Resources</strong> · 775 links</summary>
+<summary><strong>🧰 Other OSINT Resources</strong> · 103 links</summary>
 
-- [~~Framadrop~~](https://framadrop.org/en)
-- [10 Minute Tips](https://osintcurio.us/10-minute-tips)
-- [2Chat](https://2chat.co/tools/whatsapp-checker)
-- [30 best OSINT extensions for Google Chrome – osintme.com](https://www.osintme.com/index.php/2021/06/30/30-best-osint-extensions-for-google-chrome)
-- [30Tools](https://30tools.com)
-- [4everproxy](https://www.4everproxy.com/tor-proxy)
-- [aadinternals](https://aadinternals.com/osint)
-- [ABA Generator](https://www.fakenamegenerator.com/aba-validator.php)
-- [Abine](https://www.abine.com)
-- [Abuse.ch](https://abuse.ch)
-- [abuseipdb.com/api](https://www.abuseipdb.com/api)
-- [AccuWeather](https://www.accuweather.com)
 - [ACLED](https://acleddata.com)
-- [ActiveTK](https://www.activetk.jp/tools/yt-not-well-known)
 - [Acunetix](https://www.acunetix.com)
-- [Adatascientist](https://adatascienti.st)
-- [AdGuard VPN](https://adguard-vpn.com/en/welcome.html)
-- [Adium](https://adium.im)
-- [Aeon](https://www.aeontimeline.com)
-- [AGOA Data Center](https://agoa.info)
 - [Amazon SNS](https://aws.amazon.com/sns)
 - [anon.li Alias](https://anon.li/alias)
-- [AnonAddy](https://anonaddy.com)
 - [Answers.com](https://www.answers.com)
-- [ANY.RUN](https://any.run)
-- [APT Groups and Operations](https://docs.google.com/spreadsheets/u/0/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/pubhtml)
-- [Arbor.js](https://arborjs.org)
-- [Argos OSINT](https://argos-osint.com)
-- [Arizona LE Database - ABC15](https://datawrapper.dwcdn.net/kkg90/6)
-- [arXiv.org](https://arxiv.org)
 - [Ask](https://www.ask.com)
-- [Atom](https://browser.ru)
-- [AWS Public Datasets](https://aws.amazon.com/datasets)
-- [BackgroundChecks.com](https://www.backgroundchecks.com)
-- [Bank for International Settlements Statistics](https://www.bis.org/statistics/index.htm)
-- [Baton Rouge Traffic Cams](https://www.arcgis.com/apps/webappviewer/index.html?id=0ec05ffb0d2d4735a969e8f31f820a7b)
-- [Befunky](https://www.befunky.com)
-- [Berkely Library: Data Lab](https://www.lib.berkeley.edu/libraries/data-lab)
-- [Big Number Calculator](https://defuse.ca/big-number-calculator.htm)
-- [BigNox](https://www.bignox.com)
-- [BigQuery public datasets](https://cloud.google.com/bigquery/public-data)
-- [Bin.disroot.org](https://bin.disroot.org)
-- [Binary Ninja](https://binary.ninja)
-- [BinaryEdge](https://www.binaryedge.io)
-- [Bing Microsoft Translator](https://www.bing.com/translator)
-- [bioRxiv.org](https://www.biorxiv.org)
-- [Bitquery](https://bitquery.io)
-- [Bitwarden](https://bitwarden.com)
-- [Bizint](https://www.bizint.com)
-- [blackarch.org](https://blackarch.org)
-- [BlackHole](https://blackhole.run)
-- [bleachbit.org](https://bleachbit.org)
-- [Blockpath.com](https://blockpath.com)
-- [Bluestacks](https://www.bluestacks.com)
-- [Boolean Strings | Tools](https://booleanstrings.com/tools)
-- [BOSINT](https://app.bosint.gg)
-- [Brave](https://brave.com)
-- [Brave Talk](https://talk.brave.com)
 - [breachdirectory](https://breachdirectory.org)
-- [Breadcrumbs](https://breadcrumbs.app)
-- [Briar](https://briarproject.org)
-- [Bromite](https://www.bromite.org)
-- [Brute Ratel C4](https://bruteratel.com)
-- [BugBase](https://bugbase.in)
-- [Bugcrowd](https://www.bugcrowd.com)
-- [Bugcrowd](https://bugcrowd.com)
-- [Bunker.is](https://bunker.is)
-- [Burp Suite](https://portswigger.net/burp)
 - [Buy me a coffee](https://www.buymeacoffee.com/rawfilejson)
-- [C4ADS](https://c4ads.org)
-- [CachedPages](http://www.cachedpages.com)
-- [Cacoo](https://cacoo.com)
-- [Calls Node Status](https://www.broadcastify.com/calls/status)
-- [Camhacker.com](https://www.camhacker.com)
-- [Canary Tokens](http://canarytokens.org/generate)
-- [Canva](https://www.canva.com)
-- [CCleaner](https://www.piriform.com/ccleaner)
-- [CentBrowser](https://www.centbrowser.com)
-- [CEPII](https://www.cepii.fr/CEPII/en/welcome.asp)
-- [CertGrep](https://certgrep.sh)
-- [Chart.js](https://www.chartjs.org)
-- [chartblocks](https://www.chartblocks.com)
-- [Chatsecure](https://chatsecure.org)
 - [Check-The-Sum](https://check-the-sum.fr)
-- [Chibisafe.moe](https://chibisafe.moe)
-- [Chicago Police Department Demographics](https://public.flourish.studio/visualisation/1089756)
-- [Choose your wallet](https://bitcoin.org/en/choose-your-wallet)
-- [Chrome](https://www.google.com/chrome)
-- [cia.gov/readingroom](https://www.cia.gov/readingroom)
-- [CIRCL Hashlookup](https://www.circl.lu/services/hashlookup)
-- [Circos](https://circos.ca)
-- [Cisco Talos Intelligence Group](https://talosintelligence.com)
-- [CITEAM](https://citeam.org)
-- [Citizens Police Data Project](https://beta.cpdp.co)
-- [city-webcams.com](https://city-webcams.com)
-- [Civilian Office of Police Accountability](https://www.chicagocopa.org/data-cases/case-portal)
-- [Clearbit Connect](https://connect.clearbit.com)
 - [click Here](https://sniitch.com)
 - [Cloudflare Radar Scan](https://radar.cloudflare.com/scan)
-- [Cloudflare Resolver](http://www.skypeipresolver.net/cloudflare.php)
-- [Cloudflare Resolver Tool](https://shadowcrypt.net/tools/cloudflare)
-- [Clubhouse Database](https://clubhousedb.com)
-- [Cobalt](https://www.cobalt.io)
-- [Cobalt Strike](https://www.cobaltstrike.com)
-- [CodePen](https://codepen.io)
-- [COMB](https://www.proxynova.com/tools/comb)
-- [Commentexporter.com](https://www.commentexporter.com)
-- [Comodo Dragon](https://www.comodo.com/home/browsers-toolbars/browser.php)
-- [Compiler Explorer](https://godbolt.org)
 - [Comprehensive database for data breaches](https://weleakinfo.to/v2)
-- [Conflict Observatory](https://hub.conflictobservatory.org)
-- [Consumer Reports Security Planner](https://securityplanner.consumerreports.org)
-- [Coowon](https://coowon.com)
-- [CrackStation](https://crackstation.net)
-- [creately](https://creately.com)
-- [Credit Card Generator](https://www.fakenamegenerator.com/credit-card-validator.php)
-- [criminalip.io/developer](https://www.criminalip.io/developer)
-- [Cryptee](https://crypt.ee)
-- [Cryptpad.fr](https://cryptpad.fr)
-- [csilinux.com](https://csilinux.com)
-- [CSV to HTML](https://codepen.io/RYJASM/pen/LVEWgV)
-- [cymon](https://cymon.io)
-- [D3js](https://d3js.org)
-- [Danex.io](http://danex.io)
-- [Dark Tracer](https://darktracer.io)
-- [Data Visualization Catalogue](https://datavizcatalogue.com)
-- [Data.gov](https://www.data.gov)
-- [Data.gov.uk](https://data.gov.uk)
-- [data.world](https://data.world)
-- [Database of suspected terrorists](https://www.nsatt.org)
-- [Datawrapper](https://datawrapper.de)
-- [Dating Profile Generator](https://www.dating-profile-generator.org.uk)
-- [DBPedia](https://wiki.dbpedia.org)
-- [DBpedia](https://www.dbpedia.org)
 - [DDoSecrets](https://ddosecrets.com/wiki/Special:AllPages)
-- [ddosecrets.com](https://ddosecrets.com)
-- [DeadDrop](https://deaddrop.theosintconsultants.com/dashboard)
-- [Decoding Social Security Numbers](https://stevemorse.org/ssn/ssn.html)
-- [Decompiler.com](http://www.decompiler.com)
-- [DeepL](https://www.deepl.com/translator)
 - [DeepL](https://www.deepl.com)
 - [Dehashed](https://www.dehashed.com)
-- [dehashed.com/docs](https://dehashed.com/docs)
-- [Dencode.com](https://dencode.com)
-- [developer.shodan.io](https://developer.shodan.io)
-- [developers.virustotal.com](https://developers.virustotal.com)
-- [DFIR Diva](https://dfirdiva.com/hooked-on-osint)
-- [Diceware Generator](https://www.rempe.us/diceware/#eff)
-- [digital-forensics.sans.org](https://digital-forensics.sans.org)
-- [Disasm.pro](https://disasm.pro)
-- [Disclose.io](https://disclose.io)
-- [Disconnect](https://disconnect.me)
-- [Do Not Track](https://donottrack.us)
-- [Dotspotter](https://www.forensicdots.de)
-- [Dropmark](https://www.dropmark.com)
-- [dudle](https://dudle.inf.tu-dresden.de/anonymous)
-- [Dune Analytics](https://dune.com)
-- [dygraphs](https://dygraphs.com)
-- [easely](https://www.easel.ly)
-- [Edge](https://www.microsoft.com/en-us/windows/microsoft-edge/microsoft-edge)
-- [Editor.typely.com](https://editor.typely.com)
-- [EFF Atlas of Surveillance](https://atlasofsurveillance.org)
 - [eHow](https://www.ehow.com)
-- [Element](https://element.io)
-- [Encoding and Decoding Driver’s License Numbers](https://stevemorse.org/dl/dl.html)
-- [EncSF MP](https://encfsmp.sourceforge.net)
-- [Epic Privacy Browser](https://www.epicbrowser.com)
-- [Eraser](https://eraser.heidi.ie)
-- [EtherCalc](https://ethercalc.net)
-- [European Union Open Data Portal](https://open-data.europa.eu/en/data)
-- [Eurostat](https://ec.europa.eu/eurostat)
-- [Exhibit](https://www.simile-widgets.org/exhibit)
 - [Explore breached databases](https://snusbase.com)
-- [Explore Canada’s Real Estate Market](https://www.remax.ca/find-real-estate)
-- [Explorecams.com](https://explorecams.com)
-- [Export Comments](https://exportcomments.com)
-- [Extremist Profiles](https://www.splcenter.org/fighting-hate/extremist-files/individual)
-- [Face Detection and comparison](https://6mzld2.csb.app)
-- [Fake Drivers License Generator](https://fakeinfo.net/drivers-license-generator)
-- [Fake Generator Tools](https://fauxid.com/tools)
-- [Fake Name Generator](https://www.fakenamegenerator.com)
-- [Fake Youtube Channel Generator](https://fakeinfo.net/fake-youtube-channel-generator)
-- [FaviconHash](https://kriztalz.sh/favicon-hash)
 - [favihash](https://www.favihash.com)
-- [FederalCorporation](https://federalcorporation.ca)
-- [Feeds.talonvoice.com](https://feeds.talonvoice.com)
-- [FeodoTracker](https://feodotracker.abuse.ch)
 - [Filepursuit.com](https://filepursuit.com)
-- [FileVault](https://support.apple.com/en-us/HT204837)
-- [Filmot](https://https://filmot.com)
-- [Find open FTP Servers](https://www.aware-online.com/en/osint-tutorials/find-open-ftp-servers)
-- [Flickr](https://www.flickr.com)
-- [Florida Residents Directory](https://www.floridaresidentsdirectory.com)
-- [Flot](https://www.flotcharts.org)
 - [FOFA](https://fofa.so)
 - [FollowerAudit](https://www.followeraudit.com)
-- [FortiGuard](http://www.fortiguard.com)
 - [Free Fax](https://faxzero.com)
-- [Free Virtual Machine Software](https://www.vmware.com/ca/products/workstation-player/workstation-player-evaluation.html)
-- [Freebase](https://developers.google.com/freebase)
 - [Frida](https://frida.re)
-- [FullContact](https://www.fullcontact.com)
-- [FusionCharts](https://www.fusioncharts.com)
-- [Gapminder World](https://www.gapminder.org/data)
-- [Genymotion](https://www.genymotion.com)
 - [getgophish.com](https://getgophish.com)
-- [Ghiro](https://www.getghiro.org)
-- [Global Terrorism Database](https://www.start.umd.edu/gtd/access)
-- [Gnu Icecat](https://icecatbrowser.org)
-- [GNU PG](https://www.gnupg.org/download/index.html)
-- [gogettr](https://pypi.org/project/gogettr)
 - [Goldensnitches](https://goldensnitches.com)
-- [Google Developers: Charts](https://developers.google.com/chart)
 - [Google Docs CSE](https://cse.google.com/cse/publicurl?cx=013991603413798772546:rse-4irjrn8#gsc.tab=0)
 - [Google Finder](https://tools.epieos.com/google-account.php)
-- [Google Public Data Explorer](https://www.google.com/publicdata/directory)
-- [Google Translate](https://translate.google.com)
 - [Google.com Hack Attack](https://cse.google.com/cse/publicurl?cx=017648920863780530960:lddgpbzqgoi)
-- [GPG Tools](https://gpgtools.org)
-- [GraphX](https://spark.apache.org/graphx)
-- [Greynoise](https://greynoise.io)
-- [GreyNoise Intelligence](https://www.greynoise.io/viz)
-- [Groupio](https://en.groupio.app)
-- [Guardian Project](https://guardianproject.info)
-- [HackenProof](https://hackenproof.com)
-- [HackerOne](https://www.hackerone.com)
-- [HackerOne](https://hackerone.com)
-- [HackTrophy](https://hacktrophy.com)
-- [Hadzy.com](https://hadzy.com)
 - [Hashatit](https://www.hashatit.com)
-- [Hashes.com](https://hashes.com/en/decrypt/hash)
-- [haveibeenpwned.com/API](https://haveibeenpwned.com/API)
-- [hide.me VPN](https://hide.me/en)
-- [Highcharts](https://www.highcharts.com)
-- [HIS Piers](https://www.ihs.com/products/piers.html)
-- [Hohli](https://charts.hohli.com)
-- [Hong Kong Traffic Data & Cams](https://www.arcgis.com/apps/dashboards/47be6372a0434beaba99ae9c9f1d598d)
-- [Hotspot Shield](https://www.hotspotshield.com)
-- [How many untested r@pe kits does your city police department or county sheriff’s office have?](https://datawrapper.dwcdn.net/uOdaT/4)
-- [HTML editor](https://onlinehtmleditor.dev)
-- [HTML Sanitizer Tool](https://defuse.ca/html-sanitize.htm)
-- [HTTPs Everywhere](https://www.eff.org/https-everywhere)
-- [https://1tv.ge](https://1tv.ge)
-- [https://acb.gov.ge](https://acb.gov.ge)
-- [https://agruni.edu.ge](https://agruni.edu.ge)
-- [https://amerikiskhma.com](https://amerikiskhma.com)
-- [https://auto.ss.ge](https://auto.ss.ge)
-- [https://autopapa.ge](https://autopapa.ge)
-- [https://boost.worldbank.org](https://boost.worldbank.org)
-- [https://btu.edu.ge](https://btu.edu.ge)
-- [https://budget.ge](https://budget.ge)
-- [https://cesko.ge](https://cesko.ge)
 - [https://cesko.ge/en/amomrchevlebi](https://cesko.ge/en/amomrchevlebi)
-- [https://civil.ge](https://civil.ge)
-- [https://competition.ge](https://competition.ge)
-- [https://crrc.ge](https://crrc.ge)
-- [https://csb.gov.ge](https://csb.gov.ge)
-- [https://cu.edu.ge](https://cu.edu.ge)
-- [https://cv.ge](https://cv.ge)
-- [https://data.gov.ge](https://data.gov.ge)
-- [https://data.ipu.org/parliament/GE](https://data.ipu.org/parliament/GE)
-- [https://dea.gov.ge](https://dea.gov.ge)
-- [https://dis.gov.ge](https://dis.gov.ge)
-- [https://elibrary.emis.ge](https://elibrary.emis.ge)
-- [https://emis.ge](https://emis.ge)
-- [https://enreg.reestri.gov.ge](https://enreg.reestri.gov.ge)
-- [https://eqe.ge](https://eqe.ge)
-- [https://evercar.ge](https://evercar.ge)
 - [https://extra.ge](https://extra.ge)
 - [https://factcheck.ge](https://factcheck.ge)
-- [https://freeuni.edu.ge](https://freeuni.edu.ge)
-- [https://gavel.ge](https://gavel.ge)
-- [https://gtu.ge](https://gtu.ge)
 - [https://heritage.gov.ge](https://heritage.gov.ge)
-- [https://home.ge](https://home.ge)
-- [https://home.ss.ge](https://home.ss.ge)
-- [https://hr.ge](https://hr.ge)
-- [https://hra.gov.ge](https://hra.gov.ge)
-- [https://icij.org](https://icij.org)
-- [https://iliauni.edu.ge](https://iliauni.edu.ge)
-- [https://insurance.gov.ge](https://insurance.gov.ge)
-- [https://isfed.ge](https://isfed.ge)
-- [https://jobs.ge](https://jobs.ge)
-- [https://korter.ge](https://korter.ge)
-- [https://livo.ge](https://livo.ge)
 - [https://makler.ge](https://makler.ge)
-- [https://matsne.gov.ge](https://matsne.gov.ge)
-- [https://mes.gov.ge](https://mes.gov.ge)
-- [https://moh.gov.ge](https://moh.gov.ge)
-- [https://mtavari.tv](https://mtavari.tv)
 - [https://museum.ge](https://museum.ge)
-- [https://myauto.ge](https://myauto.ge)
-- [https://myauto.ge/en/vin](https://myauto.ge/en/vin)
-- [https://myhome.ge](https://myhome.ge)
-- [https://myjobs.ge](https://myjobs.ge)
 - [https://mymarket.ge](https://mymarket.ge)
-- [https://myparts.ge](https://myparts.ge)
 - [https://mythdetector.com](https://mythdetector.com)
-- [https://mythdetector.com/en/factchecker-db/](https://mythdetector.com/en/factchecker-db)
-- [https://naec.ge](https://naec.ge)
-- [https://napr.gov.ge](https://napr.gov.ge)
-- [https://napr.gov.ge/en/service/registers](https://napr.gov.ge/en/service/registers)
-- [https://ncdc.ge](https://ncdc.ge)
-- [https://nea.gov.ge](https://nea.gov.ge)
-- [https://nfa.gov.ge](https://nfa.gov.ge)
-- [https://nsdi.gov.ge](https://nsdi.gov.ge)
-- [https://occrp.org](https://occrp.org)
-- [https://opendata.spa.ge](https://opendata.spa.ge)
-- [https://opensanctions.org/datasets/gedeclarations/](https://opensanctions.org/datasets/ge_declarations)
-- [https://radiotavisupleba.ge](https://radiotavisupleba.ge)
-- [https://rs.ge](https://rs.ge)
-- [https://rs.ge/Eservices-en](https://rs.ge/Eservices-en)
-- [https://rs.ge/TaxPayer-en](https://rs.ge/TaxPayer-en)
-- [https://rustavi2.ge](https://rustavi2.ge)
-- [https://sao.ge](https://sao.ge)
-- [https://sda.gov.ge](https://sda.gov.ge)
-- [https://skolebi.emis.ge](https://skolebi.emis.ge)
 - [https://ss.ge](https://ss.ge)
-- [https://ssa.gov.ge](https://ssa.gov.ge)
-- [https://students.emis.ge](https://students.emis.ge)
-- [https://tbilisihome.ge](https://tbilisihome.ge)
-- [https://transparency.ge](https://transparency.ge)
-- [https://tsu.ge](https://tsu.ge)
-- [https://tvpirveli.ge](https://tvpirveli.ge)
-- [https://ug.edu.ge](https://ug.edu.ge)
-- [https://wine.gov.ge](https://wine.gov.ge)
 - [https://www.ciop.pa.gov.br/aovivo/index.html](https://www.ciop.pa.gov.br/aovivo/index.html)
-- [Hudson Rock](https://www.hudsonrock.com/free-tools)
-- [Human Development Reports](https://hdr.undp.org/en/global-reports)
-- [Hunchly](https://www.hunch.ly)
-- [Hunt](https://www.hunt.io)
-- [hunter.io/api](https://hunter.io/api)
-- [I2P](https://geti2p.net)
-- [I2P](https://geti2p.net/en/download)
-- [IBM X-Force Exchange](https://exchange.xforce.ibmcloud.com)
-- [IDA Free](https://hex-rays.com/ida-free)
-- [ILOSTAT](https://www.ilo.org/ilostat/faces/oracle/webcenter/portalapp/pagehierarchy/Page137.jspx?_afrLoop=443508925711569&clean=true#%40%3F_afrLoop%3D443508925711569%26clean%3Dtrue%26_adf.ctrl-state%3Dl4dwldaf3_9)
-- [IMEI Number Generator](https://dyrk.org/tools/imei)
-- [IMF World Economic Outlook Database](https://www.imf.org/external/ns/cs.aspx?id=28)
-- [Imgur](https://imgur.com)
-- [Immunefi](https://immunefi.com)
-- [immuniweb.com/websec](https://www.immuniweb.com/websec)
-- [Index Mundi](https://www.indexmundi.com)
-- [Infogr.am](https://infogr.am)
-- [INFORMNAPALM](https://informnapalm.org/db/russian-aggression/#lang=en&page=m_unit)
-- [Inkscape](https://inkscape.org)
-- [Insecam](http://www.insecam.org)
-- [Insomnia](https://insomnia.rest)
-- [Intelligence Security](https://intelligencesecurity.io)
-- [Intelligence X](https://intelx.io)
-- [International Energy Agency Statistics](https://www.iea.org/statistics)
-- [International Name Generator](https://www.behindthename.com/random)
-- [Internet Census 2012](http://census2012.sourceforge.net/paper.html)
 - [Internetdb.shodan.io](https://internetdb.shodan.io)
-- [Intigriti](https://www.intigriti.com)
-- [Iowa Cities police budgets](https://public.flourish.studio/visualisation/3168834)
-- [IPA Translator](https://ipatranslator.com)
 - [IPASIS](https://ipasis.com)
-- [IPinfo](https://ipinfo.io)
-- [ipinfo.io/developers](https://ipinfo.io/developers)
 - [IPLeak](https://ipleak.net)
 - [IPLoop](https://iploop.io)
 - [IPQualityScore](https://www.ipqualityscore.com)
 - [IRWatch](https://irwatch.org)
 - [ISW](https://www.understandingwar.org)
-- [it-tools](https://it-tools.tech)
-- [Jake Creps](https://jakecreps.com)
-- [Jami.net](https://jami.net)
 - [Janes](https://www.janes.com)
-- [Jitsi Meet](https://meet.jit.si)
-- [JpGraph](https://jpgraph.net)
-- [jqPlot](https://www.jqplot.com)
-- [Junar](https://junar.com)
-- [justdeleteme](https://justdelete.me)
 - [JustPaste.it](https://justpaste.it)
 - [KakaoTalk](https://www.kakaocorp.com/page/service/service/KakaoTalk)
 - [KakaoTalk Plus Friends](https://pf.kakao.com)
-- [kali.org](https://kali.org)
-- [KAPE](https://www.kroll.com/kape)
-- [Kasm](https://kasmweb.com)
-- [KeePass Password Safe](https://keepass.info)
-- [keepassxc.org](https://keepassxc.org)
-- [Knoema](https://knoema.com)
-- [Lampyre](https://lampyre.io)
-- [LandMatrix](https://landmatrix.org)
-- [Lastpass](https://lastpass.com)
-- [Latinobarometro](https://www.latinobarometro.org)
-- [Ldplayer.net](https://www.ldplayer.net)
 - [Leak-Lookup](https://leak-lookup.com)
 - [Leakedpassword.com](https://leakedpassword.com)
-- [LeakIX](https://leakix.net)
 - [LENDX](http://lendx.org)
-- [Libgen.fun](https://libgen.fun)
-- [Library, University of Michigan: Statistics and Datasets](https://www.lib.umich.edu/browse/Statistics%20and%20Data%20Sets)
-- [LibreWolf](https://librewolf.net)
 - [LINE](https://line.me)
-- [Link Gopher](https://sites.google.com/site/linkgopher)
-- [LinkScope](https://accentusoft.com)
-- [Linkuroius](https://linkurio.us)
-- [Live demo](https://getprism.su)
-- [Live World Webcam](http://liveworldwebcam.net)
-- [Loader.to](https://loader.to)
-- [LocalFocus](https://www.localfocus.nl)
-- [Lockbin](https://lockbin.com)
-- [Lubbock Live Traffic Cameras](https://www.arcgis.com/apps/webappviewer/index.html?id=affe50ac55824c7a8c757d3980787e31)
-- [Lucidchart](https://www.lucidchart.com)
-- [MalShare](https://malshare.com)
-- [Maltego](https://www.maltego.com)
-- [Master Password](https://masterpasswordapp.com)
-- [Matweb.info](https://matweb.info)
-- [Maxthon](https://www.maxthon.com)
-- [Md5 Decrypt & Encrypt](https://md5decrypt.net/en)
-- [MD5 reverse lookup](https://md5.gromweb.com)
-- [MEGA](https://mega.io)
-- [Memento Time Travel](https://timetravel.mementoweb.org)
-- [Memuplay.com](https://www.memuplay.com)
-- [Metacleaner.com](https://metacleaner.com)
-- [MetaSleuth](https://metasleuth.io)
-- [Michigan Resident Database](https://www.michiganresidentdatabase.com)
 - [Military Land](https://militaryland.net)
-- [MISP](https://www.misp-project.org)
-- [MISP Galaxy](https://www.misp-galaxy.org)
-- [Mitmproxy](https://mitmproxy.org)
-- [MITRE ATT&CK](https://attack.mitre.org)
-- [MITRE D3FEND](https://d3fend.mitre.org)
 - [Mnemonic](https://mnemonic.org)
-- [Monitor database leaks](https://vigilante.pw)
 - [Monitor The Situation](https://monitor-the-situation.com)
-- [Mozilla HTTP Observatory](https://developer.mozilla.org/en-US/observatory)
-- [Mullvad Browser](https://mullvad.net/en/browser)
-- [mullvad.net](https://mullvad.net)
-- [Multi Translate](https://translate.mix.pink)
-- [Nation Master](https://www.nationmaster.com/statistics)
 - [Nessus](https://www.tenable.com/products/nessus)
-- [Netcraft Site Report](https://sitereport.netcraft.com)
-- [Netlas.io](https://netlas.io)
-- [Nighthawk](https://www.mdsec.co.uk/nighthawk)
-- [NINO Generator](https://www.fakenamegenerator.com/national-insurance-number.php)
-- [Nixory](https://nixory.sourceforge.net)
 - [No2Bounce](https://no2bounce.com)
-- [Nodebox](https://www.nodebox.net)
-- [North Carolina Resident Database](https://northcarolinaresidentdatabase.com)
-- [NoScript](https://noscript.net)
-- [nsa.gov](https://nsa.gov)
-- [Observable](https://observablehq.com)
-- [Obsidian](https://obsidian.md)
-- [ODA - The Online Disassembler](https://onlinedisassembler.com/odaweb)
-- [OECD Data](https://data.oecd.org)
-- [OffShore.cat](https://offshore.cat/?page=vpn)
-- [Ohio Resident Database](https://www.ohioresidentdatabase.com)
-- [Oldweb.today](http://oldweb.today)
-- [Onion.pet](http://onion.pet)
-- [onionland](https://onionland.io)
-- [Onions - Darknetlive](https://darknetlive.com/onions)
-- [onionshare.org](https://onionshare.org)
-- [Online Color Picker](https://colorpicker.me)
-- [Online Password Hash Crack](https://www.onlinehashcrack.com)
-- [Online Sequencer](https://onlinesequencer.net)
-- [Online Tool to Extract Links from any Web Page](https://hackertarget.com/extract-links)
 - [ONYPHE](https://www.onyphe.io)
-- [Open Bug Bounty](https://www.openbugbounty.org)
-- [Open Data Policing](https://opendatapolicing.com)
-- [Open Source Virtualization](https://www.virtualbox.org/wiki/Downloads)
-- [Open-source intelligence (OSINT)](https://en.wikipedia.org/wiki/Open-source_intelligence)
-- [Open-source intelligence for breaches](https://scylla.sh)
-- [Openoversight](https://openoversight.com)
-- [OpenPhish](https://openphish.com)
-- [Opensanctions.org](https://opensanctions.org)
-- [Opentopia](http://www.opentopia.com)
 - [OpenVAS](https://www.openvas.org)
-- [Opera](https://www.opera.com)
 - [ophcrack.sourceforge.io](https://ophcrack.sourceforge.io)
-- [Oregon DPSST Professional Standards Cases Database](https://www.oregon.gov/dpsst/CJ/Pages/Cases.aspx)
 - [Oryx](https://www.oryxspioenkop.com)
-- [os-surveillance](https://os-surveillance.io)
-- [OSINT Is A State Of Mind](https://medium.com/secjuice/osint-as-a-mindset-7d42ad72113d)
-- [OSINT Techniques](https://www.osinttechniques.com)
-- [OSINT Virtual Machine for Investigations](https://www.tracelabs.org/initiatives/osint-vm)
-- [osint-cli-tool-skeleton](https://pypi.org/project/osint-cli-tool-skeleton)
-- [OSINT-Tool](https://www.osint-tool.com)
-- [OSINT.SH](https://osint.sh)
-- [Osint.support](https://osint.support)
-- [Osint.team](https://osint.team)
-- [osintme.com](https://www.osintme.com)
-- [Outwit](https://www.outwit.com)
-- [OWASP API Security Top 10](https://owasp.org/www-project-api-security)
-- [OWASP ZAP](https://www.zaproxy.org)
-- [Pad.riseup.net](https://pad.riseup.net)
-- [Page Links Extractor Tool](https://shadowcrypt.net/tools/pagelinks)
-- [Palladio](https://hdlab.stanford.edu/palladio)
-- [Panopticlick](https://panopticlick.eff.org)
-- [parrotsec.org](https://parrotsec.org)
-- [Passive Total](https://community.riskiq.com)
 - [Paste.ee](https://paste.ee)
 - [PasteLert](https://andrewmohawk.com/pasteLert)
-- [Peekalink](https://www.peekalink.io)
-- [pentest-tools.com](https://pentest-tools.com)
-- [PGPKeyAnalyser](https://kriztalz.sh/pgp-key-analyser)
-- [PhishTank](https://phishtank.org)
-- [PIC/CIC Code Database](https://www.allredtech.com)
-- [Pidgin](https://www.pidgin.im)
-- [Piktochart](https://piktochart.com)
-- [Pixxa](https://www.pixxa.com)
 - [PlexTrac](https://plextrac.com)
-- [Plotly](https://plot.ly)
-- [Policecrime.bgsu.edu](https://policecrime.bgsu.edu)
-- [Population Reference Bureau Data Finder](https://www.prb.org/DataFinder.aspx)
 - [portswigger.net](https://portswigger.net)
-- [Postman](https://www.postman.com)
-- [Preceden](https://www.preceden.com)
-- [PrimeOS](https://www.primeos.in)
-- [PRISM Break](https://prism-break.org/en)
-- [Privacy.com](https://privacy.com)
-- [PrivateBin](https://privatebin.net)
-- [Privazer](https://privazer.com)
-- [Project Gutenberg](https://www.gutenberg.org)
 - [Project Owl](https://projowl.org)
-- [Project Whispers](https://whispers.ddosecrets.com)
-- [Proofread Bot](https://proofreadbot.com)
-- [Prospeo](https://prospeo.io)
-- [proton.me](https://proton.me)
-- [ProtonVPN](https://protonvpn.com)
-- [PRS Risk Indicators](https://www.prsgroup.com)
 - [PSBDMP](https://psbdmp.ws)
-- [Psiphon](https://www.psiphon.ca)
-- [PSN Resolver](https://playstationresolver.xyz)
 - [Punkspider](https://punkspider.org)
-- [pywhat](https://pypi.org/project/pywhat)
-- [QlikView](https://www.visualintelligence.co.nz/qlikview)
-- [Quadrigram](https://www.quadrigram.com)
-- [Quake](https://quake.360.net)
 - [Qualys](https://www.qualys.com)
-- [Qubes](https://www.qubes-os.org)
-- [qubes-os.org](https://qubes-os.org)
-- [QuickCode](https://quickcode.io)
 - [Quora](https://www.quora.com)
-- [Radio-Locator](https://radio-locator.com)
-- [RadioReference](https://www.radioreference.com/apps/db)
-- [RAND](http://rand.org)
-- [Random Face Generator](https://fakeinfo.net/random-face-generator)
-- [RandTap](https://randtap.com)
-- [Ransomware Darknet websites](https://sizeof.cat/post/ransomware-darknet-websites)
-- [ransomwatch 👀 🦅](https://ransomwatch.telemetry.ltd/#/INDEX)
-- [RAW](https://raw.densitydesign.org)
-- [Realtor](https://www.realtor.com)
 - [Receive SMS Online](http://receive-sms-online.com)
 - [Receive SMS Online](https://hs3x.com)
 - [Receive SMS Online for FREE](http://freesmsverification.com)
 - [Receive-sms-now.com](http://receive-sms-now.com)
-- [Rechercher par entreprise](https://www.pes.rbq.gouv.qc.ca/RegistreLicences/Recherche?mode=Entreprise)
-- [redteam.to](https://redteam.to)
-- [rehold](https://rehold.com)
-- [reKnowledge](https://www.reknowledge.tech)
-- [remnux.org](https://remnux.org)
-- [RepoAnalyzer](https://repoanalyzer.site)
-- [Resume Generator](https://thisresumedoesnotexist.com)
-- [Revealer.cc](https://revealer.cc)
-- [Reverse Contact](https://www.reversecontact.com)
-- [Reverso](https://www.reverso.net/text_translation.aspx?lang=EN)
-- [RJSC Connect](https://rjsc.novascotia.ca)
-- [Rocket.Chat](https://rocket.chat)
-- [Rooms of Clubhouse](https://roomsofclubhouse.com)
-- [Router Passwords](https://www.routerpasswords.com)
-- [Safari](https://www.apple.com/safari)
-- [ScamAdviser](https://www.scamadviser.com)
 - [Sci-Bot](https://sci-bot.ru)
-- [Sci-hub](https://sci-hub.st)
-- [Secret Surveillance Catalogue](https://theintercept.com/surveillance-catalogue)
 - [Secure password breach checks](https://passwordrecovery.io)
-- [securedrop.org](https://securedrop.org)
-- [Securesha](https://securesha.re)
-- [Security First - Umbrella](https://secfirst.org/umbrella)
-- [Security in a Box](https://securityinabox.org/en)
-- [Security Onion](https://securityonionsolutions.com)
-- [Send](https://send.actionsack.com)
 - [Send text free](https://globfone.com/send-text)
 - [SendaText](https://www.sendatext.co)
 - [Sentry Syria](https://sentry.syria.org)
-- [SerpApi](https://serpapi.com)
-- [Services en ligne](https://www.pes.ctq.gouv.qc.ca/pes/faces/dossierclient/recherche.jsp)
-- [SESRIC Basic Social and Economic Indicators](https://www.sesric.org/baseind.php)
-- [SESRIC Databases](https://www.sesric.org/databases-index.php)
-- [Shodan](https://shodan.io)
-- [Shodan Monitor](https://monitor.shodan.io)
-- [ShowTheDocs](http://showthedocs.com)
-- [Signal](https://signal.org)
 - [Signal Safety Numbers](https://support.signal.org/hc/en-us/articles/360007060632-What-is-a-safety-number-and-why-do-I-see-that-it-changed-)
-- [Silent circle](https://www.silentcircle.com)
-- [SimpleLogin](https://simplelogin.io)
-- [SIN Generator](https://www.fakenamegenerator.com/social-insurance-number.php)
-- [Sintelix](https://sintelix.com)
-- [SkyOSINT](https://skyosint.io)
-- [Sleipnir](https://www.fenrir-inc.com/jp/sleipnir)
 - [Slexy](https://slexy.org)
-- [Slimjet](https://www.slimjet.com)
 - [Smstome.com](https://smstome.com)
 - [Snapdex](https://snapdex.com)
-- [Snappa](https://snappa.io)
-- [Snort](https://www.snort.org)
 - [Snusbase](https://www.snusbase.com)
-- [Snusbase API](https://snusbase.com/api)
 - [Snyk](https://snyk.io)
 - [SongFromLink](https://songfromlink.com)
-- [Spamhaus](https://www.spamhaus.org)
-- [Speech Jammer](https://mynoise.net/NoiseMachines/audioJammerNoiseGenerator.php)
-- [SpiderFoot](https://www.spiderfoot.net)
-- [Spideroak](https://spideroak.com)
-- [SpyCloud](https://spycloud.com)
-- [Spyse](https://spyse.com)
-- [SQL Editor](https://www.mycompiler.io/new/sql)
-- [SQLable](https://sqlable.com)
-- [SRWare Iron](https://www.srware.net/en/software_srware_iron.php)
-- [SSN Generator](https://www.fakenamegenerator.com/social-security-number.php)
 - [StackExchange](https://stackexchange.com)
-- [START CARING STOP SHARING](https://medium.com/@Dutchosintguy/start-caring-stop-sharing-9c108d957b2c)
-- [Statista](https://www.statista.com)
-- [Steganography Online Codec](https://www.pelock.com/products/steganography-online-codec)
-- [Stutterbox](https://www.stutterbox.co.uk)
-- [Surveilliance Self Defense](https://ssd.eff.org)
-- [Synack](https://www.synack.com)
-- [syncthing.net](https://syncthing.net)
-- [t.me/OSINTgroup](https://t.me/OSINT_group)
-- [t.me/overbafer1](https://t.me/overbafer1)
-- [t.me/Socialengineering](https://t.me/Social_engineering)
-- [Tableau](https://www.tableau.com)
-- [Tableau Public](https://public.tableau.com)
-- [Tagul](https://tagul.com)
-- [Technisette](https://www.technisette.com/p/home)
-- [Technology Lookup](https://osint.sh/stack)
-- [Telegago](https://cse.google.com/cse?cx=006368593537057042503:efxu7xprihg)
-- [Telemetr](https://telemetr.io)
-- [Text and File Hash Calculator](https://defuse.ca/checksums.htm)
-- [Text Machine](https://textmachine.org/en/text-tools/cipher-identifier)
-- [text to speech online](https://www.naturalreaders.com/online)
-- [TGCG Members Page](https://c2ffn114.caspio.com/dp/e6a74000833e44e23c324a10987c)
-- [The Atlas of Economic Complexity](https://atlas.cid.harvard.edu)
-- [The Data and Story Library](https://lib.stat.cmu.edu/DASL)
-- [The Hidden Wiki](https://thehiddenwiki.org)
-- [The NYPD Files](https://projects.propublica.org/nypd-ccrb)
-- [The OSINT Vault](https://theosintvault.io)
-- [The Philadelphia Police Misconduct Database](https://datawrapper.dwcdn.net/3GbVI/1)
-- [The Tor Project](https://www.torproject.org/download)
-- [The Ultimate OSINT Collection](https://start.me/p/DPYPMz/the-ultimate-osint-collection)
-- [theHarvester](https://pypi.org/project/theHarvester)
-- [theintercept.com](https://theintercept.com)
-- [thingful](http://www.thingful.net)
-- [Thingful](https://www.thingful.net)
-- [This Rental Does Not Exist](https://thisrentaldoesnotexist.com)
-- [Thunderbird](https://www.thunderbird.net/en-US)
-- [TI](https://start.me/p/rxRbpo/ti)
-- [Tiki-toki](https://www.tiki-toki.com)
-- [Timeline](https://timeline.knightlab.com)
-- [Timeline](https://www.simile-widgets.org/timeline)
-- [Timetoast](https://www.timetoast.com)
-- [Tool | path](https://learnmeabitcoin.com/tools/path)
-- [Tor Browser](https://www.torproject.org/projects/torbrowser.html.en)
-- [Tor Metrics](https://metrics.torproject.org)
-- [Tor Project](https://www.torproject.org)
-- [Tor2web](https://www.tor2web.org)
-- [tor2web](https://tor2web.activetk.jp)
-- [Torch](https://www.torchbrowser.com)
-- [Toronto area Live Traffic Cams](https://gtaupdate.com/traffic)
-- [torproject.org](https://torproject.org)
-- [tracelabs.org](https://tracelabs.org)
-- [Tracking Digital Footprints](https://spotlight.ebu.ch/p/tracking-digital-footprints-with)
-- [Trading Economics](https://www.tradingeconomics.com)
-- [transfer.sh](https://transfer.sh)
-- [Translate](https://www.translatedict.com)
-- [Transparency.org Corruption Perception Index](https://www.transparency.org/cpi2015)
-- [Trantor.is](https://trantor.is)
 - [Trends Tool](https://osome.iu.edu/tools/trends/#)
 - [TriNetLayer](https://trinetlayer.com)
-- [TRM Labs](https://www.trmlabs.com)
-- [Trouble Fake](https://start.me/p/QRQb0O/trouble-fake)
-- [TTSReader](https://ttsreader.com)
 - [Twilio](https://www.twilio.com)
-- [Twitch Following](https://cactus.tools/twitch/following)
-- [Twitchmetrics.net](https://www.twitchmetrics.net)
-- [TwitchTracker](https://twitchtracker.com)
-- [Twiteur](https://twiteur.com)
-- [U-Find](https://u-find.com)
-- [UAV Radar](https://uavradar.live)
-- [UCBrowser](https://www.ucweb.com)
-- [Ultimate Hashing](https://md5hashing.net)
-- [UN COMTRADE Database](https://comtrade.un.org)
-- [UN Data](https://data.un.org)
-- [UNCTAD STAT](https://unctadstat.unctad.org)
-- [UNDPs Human Development Index](https://hdr.undp.org/en/data)
-- [UNECE](https://w3.unece.org/PXWeb/en)
-- [UNESCO Institute for Statistics](https://uis.unesco.org)
 - [UNOSAT](https://unosat.org)
-- [Unpaywall](https://unpaywall.org/products/extension)
-- [UNStats Social Indicators](https://unstats.un.org/unsd/demographic/products/socind)
-- [Upload | Disroot](https://disroot.org/en/services/upload)
-- [URL Decoder/Encoder](https://meyerweb.com/eric/tools/dencoder)
-- [urlscan.io/docs/api](https://urlscan.io/docs/api)
-- [US Data and Statistics](https://www.usa.gov/statistics)
-- [US SSN / Driver License / State ID / Passport / Tax ID Generator](https://www.elfqrin.com/usssndriverlicenseidgen.php)
 - [User-Agent Switcher](https://add0n.com/useragent-switcher.html)
-- [vault.fbi.gov](https://vault.fbi.gov)
-- [VDOT Traffic Cams](https://www.arcgis.com/apps/dashboards/a0d3fb34cda44f5b8b10be1b245f24a3)
-- [Velociraptor Server](https://docs.velociraptor.app)
-- [Venngage](https://venngage.com)
-- [veracrypt.fr](https://veracrypt.fr)
 - [Viber](https://www.viber.com)
 - [Viber Public Chats](https://www.viber.com/en/public-chats)
-- [VIN Generator](https://www.fakenamegenerator.com/vehicle-identification-number.php)
-- [Vis.js](https://visjs.org)
-- [Visme](https://www.visme.co)
-- [Visualize Free](https://visualizefree.com)
-- [Visualize.me](https://vizualize.me)
-- [visually](https://create.visual.ly)
-- [Vivaldi](https://vivaldi.com)
-- [Vizala](https://vizala.com)
-- [VMRay Analyzer](https://www.vmray.com)
-- [Vortex](https://www.dotmatics.com/products/vortex)
-- [VPN Comparison by That One Privacy Guy](https://thatoneprivacysite.net)
-- [w3af](https://w3af.org)
-- [WACheck](https://wacheck.online)
-- [WalletExplorer](https://walletexplorer.com)
 - [Wappalyzer](https://www.wappalyzer.com/lookup)
 - [WarWire](https://warwire.net)
-- [Waterfox](https://www.waterfox.net)
-- [WayBien](https://waybien.com)
-- [WEBCAM LIVE](https://www.whatsupcams.com/en)
-- [Webcamtaxi](https://www.webcamtaxi.com/en)
-- [Webint Master](https://webintmaster.com)
 - [WeChat](https://www.wechat.com)
-- [Week in OSINT](https://sector035.nl/articles/category:week-in-osint)
 - [weleakinfo](https://weleakinfo.io)
-- [Wetranscriber](https://www.wetranscriber.com)
-- [Whatsapp CheckLeaked](https://whatsapp.checkleaked.cc)
-- [WhatsApp Link Generator](https://create.wa.link)
 - [WhiteIntel](https://whiteintel.io)
-- [WHO Data](https://www.who.int/gho/en)
-- [whonix.org](https://whonix.org)
 - [WhosaRat.com](https://whosarat.com)
-- [Wickr](https://wickr.com)
-- [Wifispc.com](https://wifispc.com)
-- [Wikidata](https://www.wikidata.org)
-- [wikileaks](https://wikileaks.org)
-- [Wikipedia](https://en.wikipedia.org)
-- [Wiman](https://www.wiman.me)
-- [Wire](https://wire.com/en)
-- [World Bank Data](https://data.worldbank.org)
-- [World Bank Data](https://datatopics.worldbank.org/consumption/home)
-- [World Bank Enterprise Surveys](https://www.enterprisesurveys.org)
-- [World Bank Investing Across Borders](https://iab.worldbank.org)
-- [World Integrated Trade Solution](https://wits.worldbank.org)
-- [World Temperatures — Weather Around The World](https://www.timeanddate.com/weather)
-- [WorldCam](https://worldcam.eu)
-- [WorldLicensePlates](http://www.worldlicenseplates.com)
-- [WOT](https://www.mywot.com)
-- [WTO Statistics](https://www.wto.org/english/res_e/statis_e/statis_e.htm)
-- [x86 and x64 Intel Assembler](https://defuse.ca/online-x86-assembler.htm)
-- [Xboxresolver.com](https://xboxresolver.com)
-- [XBRL Voluntary Filing Program](https://www.sedar.com/issuers/issuers_en.htm)
 - [Yahoo Answers](https://answers.yahoo.com)
-- [Yandex.Translate](https://translate.yandex.com)
-- [YesWeHack](https://www.yeswehack.com)
-- [Yout](https://yout.com)
-- [Youtube channel ID](https://commentpicker.com/youtube-channel-id.php)
-- [YouTube Comment Finder](https://ytcomment.kmcat.uk)
-- [Youtube Comments Downloader](https://youtubecommentsdownloader.com)
-- [youtubetranscript](https://youtubetranscript.com)
-- [yt-dlp](https://pypi.org/project/yt-dlp)
-- [Yumpu](https://www.yumpu.com)
-- [zaproxy.org](https://zaproxy.org)
-- [ZeroBounce](https://www.zerobounce.net)
-- [Zerodium](https://zerodium.com)
-- [Zillow](https://www.zillow.com)
-- [ZingChart](https://www.zingchart.com)
-- [zoomeye](https://www.zoomeye.org)
-- [Zoopla](https://www.zoopla.co.uk)
-- [Zz.fo](https://zz.fo)
-
----
 
 </details>
 
@@ -4322,7 +4264,7 @@ Keep contributions boring and useful:
 
 ## Roadmap
 
-The roadmap is intentionally small so OSINTList does not mutate into OSINT4ALL wearing a fake moustache.
+The roadmap stays intentionally small: visual organization and link maintenance, without turning OSINTList into a methodology platform.
 
 - [x] **v0.1 — Single-page directory:** one README, simple categories, consolidated upstream links.
 - [x] **v0.2 — Deduplication:** canonical URLs merged across the main upstream lists.
